@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>statestikk tabell</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        body{
+            line-height: 1;
+            font-family: 'Open Sans', sans-serif;
+            color: #383838;
+        }
+        thead{
+            background-color: #e5e5e5;
+        }
+        tbody tr:first-child{
+               border-top: 1px solid #ccc;
+                
+        }
+        th:first-child, td:first-child{
+          border-left: 1px solid #ccc;
+        }
+        th {
+            text-align: left;
+            border-right: 1px solid #ccc;
+            
+        }
+        tbody td{
+            vertical-align: bottom;
+            border-right:1px solid #ccc ;
+            padding:.5em 1em ;
+            font-weight: normal;
+            display: table-cell ;
+        }
+        td, th{
+            padding:8px 12px;
+            font-style: inherit;
+            font-family: inherit;
+            font-size:100% ;
+        }
+        
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        tbody tr:nth-child(even) {
+            background-color:#f5f5f5;
+        }
+
+        tbody tr:hover {
+               background-color: #ccc;
+        }
+
+        @media (max-width: 900px) {
+
+            th:last-child, td:last-child {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            th:nth-child(2), td:nth-child(2) {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <article>
+        <table>
+            <h1>Befolkning</h1>
+            <thead>
+            <tr>
+                <th></th>
+                <th>antall</th>
+                <th>5 år tidligere</th>
+                <th>10 år tidligere</th>
+                <th>periode</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>folketall 1.januar </td>
+                <td>5 258 317</td>
+                <td>4 985 870</td>
+                <td>4 681 134</td>
+                <td>2017</td>
+
+
+            </tr>
+            <tr>
+                <td>Hjemmeboende barn under 18 år</td>
+                <td>1 114 268</td>
+                <td>1 105 279</td>
+                <td>1 085 765</td>
+                <td>2017</td>
+
+            </tr>
+            <tr>
+                <td>Privathusholdninger</td>
+                <td>2 376 971</td>
+                <td>2 226 046</td>
+                <td>2 064 841</td>
+                <td>2017</td>
+
+            </tr>
+            <tr>
+                <td>Innvandrere og norskfødte med innvandrerforeldre</td>
+                <td>883 751</td>
+                <td>655 170</td>
+                <td>415 318</td>
+                <td>2017</td>
+
+            </tr>
+            </tbody>
+
+        </table>
+    </article>
+    <article>
+        <table>
+            <h1>Befolkningsendring</h1>
+            <thead>
+            <tr>
+                <th></th>
+                <th>antall</th>
+                <th>5 år før</th>
+                <th>10 år før</th>
+                <th>periode</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Levendefødte</td>
+                <td>58890</td>
+                <td>60220</td>
+                <td>58545</td>
+                <td>2016</td>
+
+
+            </tr>
+            <tr>
+                <td>Døde</td>
+                <td>40726</td>
+                <td>41393</td>
+                <td>41253</td>
+                <td>2016</td>
+
+            </tr>
+            <tr>
+                <td>Innvandring</td>
+                <td>66800</td>
+                <td>79498</td>
+                <td>45776</td>
+                <td>2016</td>
+
+            </tr>
+            <tr>
+                <td>utvandring</td>
+                <td>40724</td>
+                <td>32466</td>
+                <td>022053</td>
+                <td>2016</td>
+
+            </tr>
+            </tbody>
+
+        </table>
+    </article>
+    <article>
+        <table>
+            <h1>Demografiske mål og beregninger</h1>
+            <thead>
+            <tr>
+                <th></th>
+                <th>verdi</th>
+                <th>5 år tidligere</th>
+                <th>10 år tidligere</th>
+                <th>periode</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Samlet fruktbarhetstall SFT, kvinner</td>
+                <td>1,71</td>
+                <td>1,88</td>
+                <td>1,90</td>
+                <td>2016</td>
+
+
+            </tr>
+            <tr>
+                <td>Samlet fruktbarhetstall SFT, menn</td>
+                <td>1,53</td>
+                <td>1,70</td>
+                <td>1,72</td>
+                <td>2016</td>
+
+            </tr>
+            <tr>
+                <td>Forventet levealder, menn</td>
+                <td>80,61</td>
+                <td>79,00</td>
+                <td>78,13</td>
+                <td>2016</td>
+
+            </tr>
+            <tr>
+                <td>Forventet levealder, kvinner</td>
+                <td>84,17</td>
+                <td>83,45</td>
+                <td>82,67</td>
+                <td>2016</td>
+
+            </tr>
+            </tbody>
+
+        </table>
+    </article>
+
+</main>
+
+
+
+</body>
+</html>
