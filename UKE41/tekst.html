@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Animasjon av tekst</title>
+    <style>
+
+        @keyframes zoomut {
+            from{
+                transform: scale(15);
+                opacity:0;
+
+            }
+            to{
+                transform: scale(1);
+                opacity:1;
+            }
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            font-size: 72px;
+            color: orange;
+            text-align: center;
+            animation: zoomut 4s ease-out forwards;
+        }
+        #tekst1{animation-delay:0}
+        #tekst2{
+            animation-delay:15;
+            opacity:0;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 id="tekst1">velkommen</h1>
+<h1 id="tekst2">til IT1</h1>
+
+</body>
+</html>
