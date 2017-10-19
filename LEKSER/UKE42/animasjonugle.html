@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Ugle</title>
+
+    <style>
+    @keyframes catwalk {
+    to{
+    background-position: 0 -6000px;
+    }
+    }
+
+
+    .ugle{
+    background-image: url("ugleanimasjon.png");
+    width: 500px;
+    height: 500px;
+
+    animation-name: catwalk, moveRight ;
+    animation-timing-function:steps(12), steps(48);
+    animation-duration: 1s, 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+    </style>
+
+</head>
+<body>
+<div id="u1" class="ugle"></div>
+
+
+</body>
+</html>

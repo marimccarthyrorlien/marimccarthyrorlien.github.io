@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Mine tabeller</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+        }
+
+        thead tr{
+            border-top: 1px solid black;
+            background-color: orchid;
+        }
+
+        /* Selektoren gjelder for tr inne i tbody*/
+        tbody tr{
+            background-color: papayawhip;
+        }
+        td, th{
+            padding: 8px 12px ; /* 8px over og under, 12px på sidene*/
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        td:first-child, th:first-child{
+            border-left: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>År</th>
+                <th>film</th>
+                <th>regissør</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+        <tr>
+            <td> 2015 </td>
+            <td>spotlight</td>
+            <td>Thomas McCarthy</td>
+        </tr>
+        <tr>
+            <td>2014</td>
+            <td>Birdman</td>
+            <td>Alejandro Gonzáles Iñárritu</td>
+        </tr>
+        <tr>
+            <td>2013</td>
+            <td>12 years a slave</td>
+            <td>Steeve McQueen</td>
+        </tr>
+        </tbody>
+
+
+
+    </table>
+
+</body>
+</html>
