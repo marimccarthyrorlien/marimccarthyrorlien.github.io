@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Sted</title>
+    <style>
+        <style>
+
+        body{
+            margin: 0;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+            font-family: sans-serif;
+        }
+
+        body > header {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+        }
+
+        body > header > {
+            display: grid;
+            grid-auto-flow: column;
+        }
+
+        body > header > a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+        body > header >  a > p{
+            color: black;
+            text-decoration:none;
+            padding-top: 6px;
+        }
+
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        body > header {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            text-align: center;
+        }
+
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        body > header > a > img {
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
+        }
+
+        *{
+            margin: 0;
+        }
+
+
+
+        body{
+            margin: 0;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+            font-family: sans-serif;
+        }
+
+        body > main > section > h1 {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+
+        #firekolonner {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+
+        }
+
+        #firekolonner img {
+            width:25%;
+        }
+
+        #firekolonner article {
+            background-color: white;
+            margin-bottom: 45px;
+            overflow: hidden;
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        body > footer {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            display: grid;
+        }
+
+        body > footer > p {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+
+        .understreket {
+            text-decoration: underline;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<header>
+
+    <a href="index.html">
+        <img src="logo2.png">
+        <p>TRAVELERS</p>
+    </a>
+
+
+    <a class="valgt" href="sted.html">
+        <img src="stedikon-01.png">
+        <p>Steder å besøke</p>
+    </a>
+    <a href="hotell.html">
+        <img src="stedikon-02.png">
+        <p>Hoteller</p>
+    </a>
+    <a href="resturante.html">
+        <img src="stedikon-03.png">
+        <p>Resturanter</p>
+    </a>
+
+</header>
+
+
+<main id="firekolonner">
+    <section>
+        <h1>Amerika</h1>
+        <article>
+            <img src="FLAGG/hawaii.gif">
+            <h1><a href=HAWAII/steder_hawaii.html>Hawaii</a></h1>
+        </article>
+        <article>
+            <img src="FLAGG/amerika.png">
+            <h1><a href="USA/steder_USA.html">USA</a></h1>
+        </article>
+        <article>
+            <img src="FLAGG/jamica.jpg">
+            <h1>Jamica</h1>
+        </article>
+
+        <article>
+            <img src="FLAGG/colombia.jpg">
+            <h1>Colombia</h1>
+        </article>
+
+
+    </section>
+
+    <section>
+        <h1>Europa</h1>
+        <article>
+            <img src="FLAGG/italia.gif">
+            <h1><a href="ITALIA/steder_italia.html">Italia</a></h1>
+        </article>
+        <article>
+            <img src="FLAGG/Praha.png">
+            <h1>Praha</h1>
+        </article>
+        <article>
+            <img src="FLAGG/norge.png">
+            <h1>Norge</h1>
+        </article>
+        <article>
+            <img src="FLAGG/Hellas.png">
+            <h1>Hellas</h1>
+        </article>
+    </section>
+
+    <section>
+        <h1>Asia</h1>
+        <article>
+            <img src="FLAGG/kina.gif">
+            <h1>Kina</h1>
+        </article>
+        <article>
+            <img src="FLAGG/maldivene.png">
+            <h1>Maldivene</h1>
+        </article>
+        <article>
+            <img src="FLAGG/japan.png" >
+            <h1>Japan</h1>
+        </article>
+        <article>
+            <img src="FLAGG/india.png" >
+            <h1>India</h1>
+        </article>
+    </section>
+
+    <section>
+        <h1>Afrika</h1>
+        <article>
+            <img src="FLAGG/Seychellene.png">
+            <h1>Seychellene</h1>
+        </article>
+        <article>
+            <img src="FLAGG/Kenya.png">
+            <h1>Kenya</h1>
+        </article>
+        <article>
+            <img src="FLAGG/Uganda.png">
+            <h1>Uganda</h1>
+        </article>
+        <article>
+            <img src="FLAGG/Morocco.png">
+            <h1>Morocco</h1>
+        </article>
+    </section>
+
+
+</main>
+
+<footer>
+    <p class="understreket">Kontakt oss</p>
+    <p>Tlf: 90890574</p>
+    <p>Epost: travelers@gmail.com</p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Travelers</title>
+    <style>
+
+
+        .slider {
+            width: 100%;
+            margin: 5px auto;
+        }
+
+        .slider-wrapper {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        .slide {
+            float: left;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 3s linear;
+        }
+
+        .slider-wrapper > .slide:first-child {
+            opacity: 1;
+        }
+
+
+
+
+    body > header {
+    background-color: white;
+    filter: drop-shadow(0px 5px 5px black);
+    }
+
+    body > header > {
+    display: grid;
+    grid-auto-flow: column;
+    }
+
+    body > header > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    }
+
+
+
+    body > header >  a > p{
+        color: black;
+        text-decoration:none;
+        padding-top: 6px;
+    }
+
+    body > header > a:hover{
+        background-color: lightskyblue;
+        color: white;
+    }
+
+    body > header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+        text-align: center;
+    }
+
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+    body > header > a > img {
+        height:100px;
+    }
+
+    body > header > h1 {
+        text-align: center;
+    }
+
+
+
+    *{
+        margin: 0;
+    }
+
+    body{
+        margin: 0;
+        background-color:white;
+        font-family: sans-serif;
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+    }
+
+
+    h1{
+        margin-bottom: 16px;
+        text-align: center;
+        user-select: none;
+
+    }
+
+    main{
+        max-width: 900px;
+        overflow: hidden;
+        margin: 0 auto; /*midstillingstrikset*/
+        min-height: 100vh;
+        background-color: white;
+    }
+
+    .slides {
+        width: 500%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap:2px;
+        margin-left: 0;
+        transition: 1s;
+        user-select: none;
+
+    }
+
+    .slides > div {
+        text-align: center;
+    }
+    .slides > div > img {
+        width:100%;
+        user-select: none;
+    }
+
+        body > footer {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            display: grid;
+        }
+
+        body > footer > p {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+
+        .understreket {
+            text-decoration: underline;
+        }
+
+        .grid{
+            margin-bottom: 5px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .grid > div:nth-child(even){
+            background-color: lightskyblue;
+            padding: 10px;
+        }
+
+        .grid > div:nth-child(odd){
+            background-color: lightskyblue;
+            padding: 10px;
+        }
+
+        .grid > div > h1{
+            font-family: sans-serif;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .grid > div > h3{
+            font-size: medium;
+        }
+
+        .grid > div > p{
+            font-size: small;
+            text-align: center;
+
+        }
+
+        @media (max-width: 870px) {
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+        @media (max-width:604px){
+            body > header{
+                grid-auto-flow: row;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+
+
+    <a href="index.html">
+         <img src="logo2.png">
+        <p>TRAVELERS</p>
+    </a>
+
+
+    <a href="sted.html">
+        <img src="stedikon-01.png">
+        <p>Steder å besøke</p>
+    </a>
+    <a href="hotell.html">
+        <img src="stedikon-02.png">
+        <p>Hoteller</p>
+    </a>
+    <a href="resturante.html">
+        <img src="stedikon-03.png">
+        <p>Resturanter</p>
+    </a>
+
+</header>
+
+<main>
+
+    <div class="slider" id="main-slider"><!-- outermost container element -->
+        <div class="slider-wrapper"><!-- innermost wrapper element -->
+            <img src="forsidebilde2.png" alt="First" class="slide" /><!-- slides -->
+            <img src="forsidebilde1.png" alt="Second" class="slide" />
+            <img src="forsidebilde3.png" alt="Third" class="slide" />
+            <img src="forsidebilde4.png" alt="Third" class="slide" />
+            <img src="forsidebilde6.jpeg" alt="fire" class="slide" />
+            <img src="forsidebilde5.png" alt="fem" class="slide" />
+            <img src="forsidebilde8.jpeg" alt="seks" class="slide" />
+            <img src="forsidebilde7.jpg" alt="syv" class="slide" />
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div>
+            <h1>Hvordan planlegge en reise?</h1>
+            <ul>
+                <li>Hvor drømmer du om å dra? Hva er målene med turen? Hva er motivajsonen? </li>
+                <br>
+                <li>Et tips er å lage et budsjett</li>
+                <br>
+                <li>Et annet tips kan bære å gjøre litt research om stedet man vil dra til. Både for å slippe eventuelle ubehagelige overraskelser, men også for å lære og få et inblikk i kultur og ..........</li>
+                <br>
+                <li>Lag en pakkeligsre og en checkliste for avreise</li>
+            </ul>
+        </div>
+
+        <div>
+            <h1>Månedens reisetips</h1>
+            <h3>hvor?</h3>
+            <p>...</p>
+            <br>
+            <h3>hvorfor?</h3>
+            <p>....</p>
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+
+<footer>
+    <p class="understreket">Kontakt oss</p>
+    <p>Tlf: 90890574</p>
+    <p>Epost: travelers@gmail.com</p>
+</footer>
+
+<script>
+
+    (function() {
+
+        function Slideshow( element ) {
+            this.el = document.querySelector( element );
+            this.init();
+        }
+
+        Slideshow.prototype = {
+            init: function() {
+                this.wrapper = this.el.querySelector( ".slider-wrapper" );
+                this.slides = this.el.querySelectorAll( ".slide" );
+                this.previous = this.el.querySelector( ".slider-previous" );
+                this.next = this.el.querySelector( ".slider-next" );
+                this.index = 0;
+                this.total = this.slides.length;
+                this.timer = null;
+
+                this.action();
+                this.stopStart();
+            },
+            _slideTo: function( slide ) {
+                var currentSlide = this.slides[slide];
+                currentSlide.style.opacity = 1;
+
+                for( var i = 0; i < this.slides.length; i++ ) {
+                    var slide = this.slides[i];
+                    if( slide !== currentSlide ) {
+                        slide.style.opacity = 0;
+                    }
+                }
+            },
+            action: function() {
+                var self = this;
+                self.timer = setInterval(function() {
+                    self.index++;
+                    if( self.index == self.slides.length ) {
+                        self.index = 0;
+                    }
+                    self._slideTo( self.index );
+
+                }, 3000);
+            },
+            stopStart: function() {
+                var self = this;
+                self.el.addEventListener( "mouseover", function() {
+                    clearInterval( self.timer );
+                    self.timer = null;
+
+                }, false);
+                self.el.addEventListener( "mouseout", function() {
+                    self.action();
+
+                }, false);
+            }
+
+
+        };
+
+        document.addEventListener( "DOMContentLoaded", function() {
+
+            var slider = new Slideshow( "#main-slider" );
+
+        });
+
+
+    })();
+
+
+
+
+</script>
+</body>
+</html>
