@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://localhost:63342/marimccarthyrorlien.github.io/NETTSIDE_MED_IKONER/index.html -->
+<html lang="no" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Travelers</title>
+    <style>
+
+
+
+
+
+        .slider {
+            width: 900px;
+            margin: 5px auto;
+
+
+        }
+
+        .slider-wrapper {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        .slide {
+            float: left;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 3s linear;
+        }
+
+        .slider-wrapper > .slide:first-child {
+            opacity: 1;
+        }
+
+
+
+
+
+
+        body{
+        margin: 0;
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+        font-family: sans-serif;
+    }
+
+    body > header {
+    background-color: white;
+    filter: drop-shadow(0px 5px 5px black);
+    }
+
+    body > header > nav {
+    display: grid;
+    grid-auto-flow: column;
+    }
+
+    body > .header > nav > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    }
+
+
+
+    body > header >  a > p{
+        color: black;
+    }
+    body > header > a:hover{
+        background-color: lightskyblue;
+        color: white;
+    }
+
+    body > header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+        text-align: center;
+    }
+
+    body > header > a > img {
+        width:90px;
+    }
+
+
+    *{
+        margin: 0;
+    }
+
+    body{
+        margin: 0;
+        background-color:#eee;
+        font-family: sans-serif;
+    }
+
+        body > header > nav > a:hover{
+            background-color: orchid;
+            color: white;
+        }
+
+    h1{
+        margin-bottom: 16px;
+        text-align: center;
+        user-select: none;
+    }
+
+    main{
+        max-width: 900px;
+        overflow: hidden;
+        margin: 0 auto; /*midstillingstrikset*/
+        min-height: 100vh;
+        background-color: white;
+    }
+    .slides {
+        width: 500%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap:2px;
+        margin-left: 0;
+        transition: 1s;
+        user-select: none;
+
+    }
+
+    .slides > div {
+        text-align: center;
+    }
+    .slides > div > img {
+        width:100%;
+        user-select: none;
+    }
+
+        body > footer {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            display: grid;
+        }
+
+        body > footer > p {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+
+        .understreket {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body data-gr-c-s-loaded="true">
+
+<header>
+
+    <a href="http://localhost:63342/marimccarthyrorlien.github.io/NETTSIDE_MED_IKONER/index.html">Startsiden</a>
+
+
+    <a href="http://localhost:63342/marimccarthyrorlien.github.io/NETTSIDE_MED_IKONER/sted.html">
+        <img src="./Travelers_files/stedikon-01.png">
+        <p>Steder å besøke</p>
+    </a>
+    <a href="http://localhost:63342/marimccarthyrorlien.github.io/NETTSIDE_MED_IKONER/hotell.html">
+        <img src="./Travelers_files/stedikon-02.png">
+        <p>Hoteller</p>
+    </a>
+    <a href="http://localhost:63342/marimccarthyrorlien.github.io/NETTSIDE_MED_IKONER/resturante.html">
+        <img src="./Travelers_files/stedikon-03.png">
+        <p>Resturanter</p>
+    </a>
+
+</header>
+
+<main>
+
+    <div class="slider" id="main-slider"><!-- outermost container element -->
+        <div class="slider-wrapper"><!-- innermost wrapper element -->
+            <img src="./Travelers_files/forsidebilde2.png" alt="First" class="slide" style="opacity: 0;"><!-- slides -->
+            <img src="./Travelers_files/forsidebilde1.png" alt="Second" class="slide" style="opacity: 1;">
+            <img src="./Travelers_files/forsidebilde3.png" alt="Third" class="slide" style="opacity: 0;">
+            <img src="./Travelers_files/forsidebilde4.png" alt="Third" class="slide" style="opacity: 0;">
+            <img src="./Travelers_files/forsidebilde6.jpeg" alt="fire" class="slide" style="opacity: 0;">
+            <img src="./Travelers_files/forsidebilde5.png" alt="fem" class="slide" style="opacity: 0;">
+            <img src="./Travelers_files/forsidebilde8.jpeg" alt="seks" class="slide" style="opacity: 0;">
+            <img src="./Travelers_files/forsidebilde7.jpg" alt="syv" class="slide" style="opacity: 0;">
+        </div>
+    </div>
+
+    <h1>Lyst å reise?</h1>
+    <p>......</p>
+
+</main>
+
+
+<footer>
+    <p class="understreket">Kontakt oss</p>
+    <p>Telf: 90890574</p>
+    <p>Epost: travelers@gmail.com</p>
+</footer>
+
+<script>
+
+    (function() {
+
+        function Slideshow( element ) {
+            this.el = document.querySelector( element );
+            this.init();
+        }
+
+        Slideshow.prototype = {
+            init: function() {
+                this.wrapper = this.el.querySelector( ".slider-wrapper" );
+                this.slides = this.el.querySelectorAll( ".slide" );
+                this.previous = this.el.querySelector( ".slider-previous" );
+                this.next = this.el.querySelector( ".slider-next" );
+                this.index = 0;
+                this.total = this.slides.length;
+                this.timer = null;
+
+                this.action();
+                this.stopStart();
+            },
+            _slideTo: function( slide ) {
+                var currentSlide = this.slides[slide];
+                currentSlide.style.opacity = 1;
+
+                for( var i = 0; i < this.slides.length; i++ ) {
+                    var slide = this.slides[i];
+                    if( slide !== currentSlide ) {
+                        slide.style.opacity = 0;
+                    }
+                }
+            },
+            action: function() {
+                var self = this;
+                self.timer = setInterval(function() {
+                    self.index++;
+                    if( self.index == self.slides.length ) {
+                        self.index = 0;
+                    }
+                    self._slideTo( self.index );
+
+                }, 3000);
+            },
+            stopStart: function() {
+                var self = this;
+                self.el.addEventListener( "mouseover", function() {
+                    clearInterval( self.timer );
+                    self.timer = null;
+
+                }, false);
+                self.el.addEventListener( "mouseout", function() {
+                    self.action();
+
+                }, false);
+            }
+
+
+        };
+
+        document.addEventListener( "DOMContentLoaded", function() {
+
+            var slider = new Slideshow( "#main-slider" );
+
+        });
+
+
+    })();
+
+
+
+
+</script>
+
+<div id="js-atavi-extension-install"></div></body></html>
