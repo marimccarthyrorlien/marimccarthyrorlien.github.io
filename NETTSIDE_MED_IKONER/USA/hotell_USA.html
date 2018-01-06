@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>USA hotell</title>
+    <style>
+
+        #firekolonner {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-left:5px;
+            margin-right:5px;
+        }
+
+        #firekolonner img {
+            width: 100%;
+        }
+
+        #firekolonner article {
+            background-color: #eee;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+
+        }
+
+        body > header {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            margin-bottom: 10px;
+        }
+
+        body > header > nav {
+            display: grid;
+            grid-auto-flow: column;
+        }
+
+        body > .header > nav > a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+        body > header >  a > p{
+            color: black;
+            text-decoration:none;
+            padding-top: 6px;
+        }
+
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        body > header {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            text-align: center;
+        }
+
+        body > header > a > img {
+            height: 100px;
+        }
+
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            margin: 0;
+            background-color:white;
+            font-family: sans-serif;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        body > header > nav > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        body > footer {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            display: grid;
+        }
+
+        body > footer > p {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+
+        .understreket {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+
+    <a href="../index.html">
+        <img src="../logo2.png">
+        <p>TRAVELERS</p>
+    </a>
+
+
+    <a href="../sted.html">
+        <img src="../stedikon-01.png">
+        <p>Steder å besøke</p>
+    </a>
+
+    <a class="valgt" href="../hotell.html">
+        <img src="../stedikon-02.png">
+        <p>Hoteller</p>
+    </a>
+
+    <a href="../resturante.html">
+        <img src="../stedikon-03.png">
+        <p>Resturanter</p>
+    </a>
+
+</header>
+<main id="firekolonner">
+    <section>
+        <h1>New York</h1>
+        <article>
+            <img src="hoteller/hotell1.jpeg">
+            <h1>The Pearl Hotel</h1>
+            <br>
+            <p>Ligger 0.3km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79ddwc">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell2.jpeg">
+            <h1>Sanctuary Hotel New York</h1>
+            <br>
+            <p>Ligger 0.2km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Supermarked</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dfc9">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell3.jpeg">
+            <h1>Walker Hotel Greenwich Village</h1>
+            <br>
+            <p>Ligger 2.7km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Tilgjengelig utstyr for døve</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dfw7">Se tilbud</a>
+        </article>
+    </section>
+
+    <section>
+        <h1>Orlando</h1>
+        <article>
+            <img src="hoteller/hotell4.jpeg">
+            <h1>Grand Bohemian Hotel</h1>
+            <br>
+            <p>Ligger 0.4km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Tilgjengelig utstyr for døve</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Supermarked</li>
+                <li>Terrasse</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+                <li>Utendørs svømmebasseng</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dgdf">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell5.jpeg">
+            <h1>The Ritz-Carlton Orlando, Grande Lakes</h1>
+            <br>
+            <p>Ligger 16km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Tilgjengelig utstyr for døve</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Supermarked</li>
+                <li>Terrasse</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+                <li>Svømmebasseng innendørs og utendørs</li>
+                <li>Lekeplass</li>
+                <li>Barneklubb</li>
+                <li>Barnepass</li>
+                <li>Poolbar</li>
+                <li>Frisør</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dgyk">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell6.jpeg">
+            <h1>Castle Hotel Autograph Collection</h1>
+            <br>
+            <p>Ligger 14.4km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Tilgjengelig utstyr for døve</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Terrasse</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+                <li>Svømmebasseng utendørs</li>
+                <li>Poolbar</li>
+                <li>Vaskemaskin</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dhg0">Se tilbud</a>
+        </article>
+    </section>
+
+    <section>
+        <h1>San Francisco</h1>
+        <article>
+            <img src="hoteller/hotell7.jpeg">
+            <h1>Grand Hyatt San Francisco</h1>
+            <br>
+            <p>Ligger 0.1km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Kjæledyr tillatt</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dhyz">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell8.jpeg">
+            <h1>Hotel Zelos San Francisco</h1>
+            <br>
+            <p>Ligger 0.3km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Kjæledyr tillatt</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+                <li>Barnepass</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79djd0">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell9.jpeg">
+            <h1>InterContinental San Francisco</h1>
+            <br>
+            <p>Ligger 0.7km fra sentrum</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Supermarked</li>
+                <li>Terrasse</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Treningsrom</li>
+                <li>Restaurante</li>
+                <li>Spa</li>
+                <li>Hotellbar</li>
+                <li>Barnepass</li>
+                <li>Innendørs basseng</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79djvb">Se tilbud</a>
+        </article>
+    </section>
+
+    <section>
+        <h1>Hollywood</h1>
+        <article>
+            <img src="hoteller/hotell10.jpeg">
+            <h1>...</h1>
+            <br>
+            <p>...</p>
+            <br>
+            <ul>
+                <li>Gratis Wi-Fi</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Aircondition</li>
+            </ul>
+            <p>...</p>
+            <ul>
+                <li>Basseng</li>
+                <li>Restaurant</li>
+                <li>Spa</li>
+                <li>Treningsrom</li>
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dk3t">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/Hotell11.jpeg">
+            <h1>...</h1>
+            <br>
+            <p>...</p>
+            <br>
+            <ul>
+                ....
+            </ul>
+            <p>...</p>
+            <ul>
+                ....
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dkd1">Se tilbud</a>
+        </article>
+
+        <article>
+            <img src="hoteller/hotell12.jpeg">
+            <h1>...</h1>
+            <br>
+            <p>...</p>
+            <br>
+            <ul>
+                ....
+            </ul>
+            <p>...</p>
+            <ul>
+                ....
+            </ul>
+            <br>
+            <a href="https://www.trivago.no/go/a79dkkt">Se tilbud</a>
+        </article>
+    </section>
+</main>
+<footer>
+    <p class="understreket">Kontakt oss</p>
+    <p>Tlf: 90890574</p>
+    <p>Epost: travelers@gmail.com</p>
+</footer>
+
+</body>
+</html>
