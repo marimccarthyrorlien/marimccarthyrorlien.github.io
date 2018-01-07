@@ -3,8 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+
+        #firekolonner {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-left:5px;
+            margin-right:5px;
+        }
+
+        #firekolonner img {
+            width: 100%;
+        }
+
+        #firekolonner article {
+            background-color: #eee;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+
+        }
+
+        body > header {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+        }
+
+        body > header > {
+            display: grid;
+            grid-auto-flow: column;
+        }
+
+        body > header > a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        body > header >  a > p{
+            color: black;
+            text-decoration:none;
+            padding-top: 6px;
+        }
+
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        body > header {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            text-align: center;
+        }
+
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        body > header > a > img {
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
+        }
+
+
+
+
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            margin: 0;
+            background-color:white;
+            font-family: sans-serif;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        body > main > section > article > img{
+
+        }
+
+
+
+        body > footer {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            display: grid;
+        }
+
+        body > footer > p {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+
+        .understreket {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 850px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+            body > header{
+                grid-auto-flow: row;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
+
+<header>
+
+    <a href="../index.html">
+        <img src="../logo2.png">
+        <p>TRAVELERS</p>
+    </a>
+
+    <a class="valgt" href="../sted.html">
+        <img src="../stedikon-01.png">
+        <p>Steder å besøke</p>
+    </a>
+    <a href="../hotell.html">
+        <img src="../stedikon-02.png">
+        <p>Hoteller</p>
+    </a>
+    <a href="../resturante.html">
+        <img src="../stedikon-03.png">
+        <p>Resturanter</p>
+    </a>
+</header>
+
+<main id="firekolonner">
+
+    <section>
+        <h1>New York</h1>
+        <article>
+            <img src="steder/central_park_water.jpg">
+            <h1>Central Park</h1>
+            <p>Parken er fin for en joggetur, piknik eller en tur. Det er også et fint avbrekk fra byen og all trafikken. </p>
+        </article>
+
+        <article>
+            <img src="steder/emipre_state_building.jpg">
+            <h1>The Empire State Building</h1>
+            <p>Empire State Building er en skyskraper som ligger langs Fifth Avenue, mellom 33. og 34. gate på Manhattan, New York. Bygningen har 102 etasjer og er 381 meter høy (443 meter, inkludert antennen). Bygningen stod ferdig i 1931, og hadde den gang en prislapp på 45 millioner dollar.</p>
+        </article>
+
+        <article>
+            <img src="steder/9:11_memorial.jpg">
+            <h1>9/11 memorial og museum</h1>
+            <p>Hvor twin tower før stod er det nå et minne merke som er veldig populært å besøke. Rett ved siden av er det er museum fra hendelsen. Her kan det være lang kø, så anbefales å bestille biletter i forkant eller ha fast track pass. </p>
+        </article>
+    </section>
+
+    <section>
+        <h1>Orlando</h1>
+        <article>
+            <img src="steder/Cappadocia-hot-air-balloon-3.jpg">
+            <h1>Tur med varmluftsballong over Orlando ved soloppgang</h1>
+            <p>Gjør barndomsdrømmen virkelig med en ballongferd over Orlando i soloppgang. Du svever over skoger, frukthager og elver i det sentrale Florida under denne ultimate opplevelsen i Orlando med en ekspertpilot. Deretter kan du tenke tilbake på ballongferden med champagne og snacks etter flyturen. Ikke glem å ta med kameraet for å få noen fantastiske fotomuligheter.</p>
+        </article>
+
+        <article>
+            <img src="steder/disneyworld.jpg">
+            <h1>Walt Disney World Resort</h1>
+            <p>En samling av fornøyelsesparker rett utenfor Orlando i Florida. Disneyworld er det største og mest besøkte underholdningskomplekset i verden</p>
+        </article>
+
+        <article>
+            <img src="steder/universals.jpg">
+            <h1>Universal Studios</h1>
+            <p>En park med mange berg og dalbaner, og simulatorer. Morsomt for både voksene og barn.</p>
+        </article>
+    </section>
+
+    <section>
+        <h1>San Francisco</h1>
+        <article>
+            <img src="steder/goldengate.jpg">
+            <h1>Golden Gate Bridge</h1>
+            <p>En 2,7km bro som forbinder San Francisco til Marin County. Broen er blant San Francisco og Californias mest populære turistattraksjoner, og kan skilte med at den i sin tid var verdens lengste hengebro. </p>
+        </article>
+
+        <article>
+            <img src="steder/Walt_Disney_Family_Museum.jpg">
+            <h1>Walt Disney Family Museum</h1>
+            <p>Et museum som inneholder livsverket til Walt Disney. Her finner man utstillinger av gjenstander som var med i filmene og den nyeste teknologien som ble brukt.</p>
+        </article>
+
+        <article>
+            <img src="steder/segway.jpeg">
+            <h1>Advanced Lombard Street Segway Tour</h1>
+            <p>2,5 timer med tour og opplæring. Touren besøker de mest berømte attraksjonene i San Francisco. Må bookes 2 dager i forkant. Pris fra 620kr.</p>
+        </article>
+    </section>
+
+    <section>
+        <h1>Hollywood</h1>
+        <article>
+            <img src="steder/walkoffame.jpg">
+            <h1>Hollywood Walk of Fame</h1>
+            <p>Er et system av terrazzofliser nedfelt i fortauene langs Hollywood Boulevard og Vine Street i Hollywood, som fungerer som utmerkelser innen ulike underholdningsbransjer. </p>
+        </article>
+
+        <article>
+            <img src="steder/waterpark.jpg">
+            <h1>West Lake Park</h1>
+            <p>En park på tre mil strekning hvor man blant annet kan spille forskjellig ballspill, padle, se dyr og drive med andre vannaktiviteter. </p>
+        </article>
+
+        <article>
+            <img src="steder/teater.jpg">
+            <h1>El Capitan Theatre</h1>
+            <p>Et fint teater med mange musikaler. En opplevelse man ikke bør gå glipp av. Teateret har plass til hele 1100 tilskuere.</p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p class="understreket">Kontakt oss</p>
+    <p>Tlf: 90890574</p>
+    <p>Epost: travelers@gmail.com</p>
+</footer>
 
 </body>
 </html>
