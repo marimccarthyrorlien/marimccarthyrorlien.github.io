@@ -5,12 +5,11 @@
     <title>Italia Hotell</title>
     <style>
 
+
         #firekolonner {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
-            margin-left:5px;
-            margin-right:5px;
         }
 
         #firekolonner img {
@@ -23,28 +22,25 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #e8e8e8;
-
         }
 
         body > header {
             background-color: white;
             filter: drop-shadow(0px 5px 5px black);
-            margin-bottom: 10px;
         }
 
-        body > header > nav {
+        body > header > {
             display: grid;
             grid-auto-flow: column;
         }
 
-        body > .header > nav > a {
+        body > header > a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
             text-align: center;
             padding: 10px;
         }
-
 
 
         body > header >  a > p{
@@ -67,12 +63,17 @@
             text-align: center;
         }
 
-        body > header > a > img {
-            height: 100px;
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
         }
 
-        .valgt{
-            background-color: lightskyblue;
+        body > header > a > img {
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
         }
 
 
@@ -87,12 +88,18 @@
             display: grid;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+
         }
 
-        body > header > nav > a:hover{
-            background-color: lightskyblue;
-            color: white;
+        body > main > section > h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
+
+        body > main > section {
+            margin: 5px;
+        }
+
 
         body > footer {
             background-color: white;
@@ -112,6 +119,7 @@
         .understreket {
             text-decoration: underline;
         }
+
 
         @media (max-width: 850px) {
 
@@ -179,7 +187,7 @@
                 <li>Rullestolvenlig</li>
                 <li>Terasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Basseng</li>
                 <li>Bar</li>
@@ -204,7 +212,7 @@
                 <li>vaskemaskin</li>
                 <li>Rullestolvenlig</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Spa</li>
                 <li>Hotellbar</li>
@@ -226,7 +234,7 @@
                 <li>Rullestolvenlig</li>
                 <li>Aricondition</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Utendørsbaseng</li>
                 <li>Restaurante</li>
@@ -253,7 +261,7 @@
                 <li>Terrasse</li>
                 <li>Rullestolvenlig</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Basseng både innendørs og utendørs</li>
                 <li>Restaurante</li>
@@ -279,7 +287,7 @@
                 <li>Rullestolvenlig</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Hotellabar</li>
                 <li>Barnepass</li>
@@ -303,7 +311,7 @@
                 <li>Rullestolvenlig</li>
                 <li>Romsafe</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Hotellbar</li>
             </ul>
@@ -328,7 +336,7 @@
                 <li>Terrasse</li>
                 <li>Rullestolvenlig</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Utendørs svømmebasseng</li>
                 <li>Hotellbar</li>
@@ -352,7 +360,7 @@
                 <li>Terrasse</li>
                 <li>Rullestolvenlig</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>treningsrom</li>
                 <li>restaurant</li>
@@ -374,7 +382,7 @@
                 <li>Aircondition</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurant</li>
@@ -400,7 +408,7 @@
                 <li>Aircondition</li>
                 <li>Rullestolvennlig</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Innendørs basseng</li>
@@ -427,7 +435,7 @@
                 <li>Aircondition</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Spa</li>
                 <li>Treningsrom</li>
@@ -443,14 +451,14 @@
         <article>
             <img src="hoteller/hotell12.jpeg">
             <h1>Grand Hotel Et De Milan</h1>
-            <br>
+            <br>s
             <p>0,7km fra sentrum</p>
             <br>
             <ul>
                 <li>Terrasse</li>
                 <li>PC med internett</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurant</li>

@@ -5,12 +5,11 @@
     <title>Title</title>
     <style>
 
+
         #firekolonner {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
-            margin-left:5px;
-            margin-right:5px;
         }
 
         #firekolonner img {
@@ -23,21 +22,19 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #e8e8e8;
-
         }
 
         body > header {
             background-color: white;
             filter: drop-shadow(0px 5px 5px black);
-            margin-bottom: 10px;
         }
 
-        body > header  {
+        body > header > {
             display: grid;
             grid-auto-flow: column;
         }
 
-        body > .header > a {
+        body > header > a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
@@ -46,9 +43,9 @@
         }
 
 
-        body > header > a > p{
+        body > header >  a > p{
             color: black;
-            text-decoration: none;
+            text-decoration:none;
             padding-top: 6px;
         }
 
@@ -66,12 +63,17 @@
             text-align: center;
         }
 
-        body > header > a > img {
-            height: 100px;
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
         }
 
-        body > header > a.valgt{
-            background-color: lightskyblue;
+        body > header > a > img {
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
         }
 
 
@@ -86,12 +88,18 @@
             display: grid;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+
         }
 
-        body > header > a:hover{
-            background-color: lightskyblue;
-            color: white;
+        body > main > section > h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
+
+        body > main > section {
+            margin: 5px;
+        }
+
 
         body > footer {
             background-color: white;
@@ -167,84 +175,91 @@
     <section>
         <h1>Firence</h1>
         <article>
-            <img src="...">
+            <img src="steder/Santa_Maria_del_Fiore.jpg">
             <h1>Santa Maria del Fiore</h1>
-            <p>....</p>
+            <p>Santa Maria del Fiore er en Katolsk katedral. Den har en fantastisk arkitektur og består av mange små detaljer. Det er mulig å gå inn i katedralen også.</p>
         </article>
 
         <article>
-            <img src="...">
+            <img src="steder/Vinsmaking.jpg">
             <h1>En smak av Chianti</h1>
             <p>Skjem deg bort med en heldagstur med mat og Chiantivin fra Firenze. Her kan du smake på Toscanas beste vin, ost, kjøtt, sjokolade og mer. Reis gjennom landsbygda i et 4x4-kjøretøy sammen med en guide som er lidenskapelig opptatt av regionens matkultur. Dere drar innom en historisk villa og en Chianti Classico-vingård. Turen inkluderer opptil sju glass vin, pluss matprøver og et treretters måltid på en tradisjonell restaurant i Chianti.</p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/Galileo.jpg">
+            <h1>Galileo Museum</h1>
+            <p>Hvis du er i Firenze, ikke gå glipp av det nye Galileo-museet, tidligere institutt og museum for naturhistorie, dedikert til naturvitenskap og den berømte forskeren Galileo Galilei. Se ekstraordinære stykker som Galileos teleskop, historiske verdenskart og glober, og en rekke overraskende fornøyelser, for eksempel maskiner som skaper optiske illusjoner.</p>
         </article>
     </section>
 
     <section>
-        <h1>...</h1>
+        <h1>Roma</h1>
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/Roma.jpg">
+            <h1>Colosseum</h1>
+            <p>Colosseum er et amfiteater i Roma i Italia. Det regnes som et av de mest kjente og imponerende byggverkene i hele verden
+                Bygningen forfalt i kristen tid, og deler av den ble ødelagt av et jordskjelv i 1349. Colosseum er en av verdens mest besøkte attraksjoner for turisme.</p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/segway.jpg">
+            <h1>Rome by Segway</h1>
+            <p>Roma rundt på to hjul med familie eller venner. Både en morsom transport og man får sett mye spennende.</p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
-        </article>
-    </section>
-
-    <section>
-        <h1>...</h1>
-        <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
-        </article>
-
-        <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
-        </article>
-
-        <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/peterskirken.jpg">
+            <h1>Peterskirken</h1>
+            <p>Peterskirken (italiensk Basilica di San Pietro in Vaticano, «St. Peters basilika i Vatikanet») i Vatikanet er en av Den katolske kirkes patriarkalbasilikaer. Kirken er ikke en katedral; Romas katedral er Laterankirken, da det er dette som er biskopens kirke. Peterskirken er formelt sett et pavelig kapell, og omtales i offisielle kunngjøringer fra Den hellige stol ofte som simpelthen Capella Papale. Tidligere var Peterskirken kristendommens største kirke; men i 1990 innviet paven en enda større kirke i Yamoussoukro, hovedstaden i Elfenbenskysten.</p>
         </article>
     </section>
 
     <section>
-        <h1>...</h1>
+        <h1>Venezia</h1>
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/kajak.jpg">
+            <h1>Venice Kayak</h1>
+            <p>Utforsk kanalene med profesjonell veiledning. Perfekt kombo av sightsing og aktivitet. </p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/Markusplassen.jpg">
+            <h1>Markusplassen</h1>
+            <p>Markusplassen er Venezias store åpne sentrale plass.
+                Det er den eneste plassen som er stor nok til at den kalles en Piazza. De andre åpne byrom i Venezia kalles campo. Takket være at den, som normalt i Venezia, er bilfri, domineres den av mennesker og duer. Duene er relativt tamme og spiser gjerne av hånden eller plasserer seg på armen eller hodet til de besøkende. Den dominerende lyden er den menneskelige stemme, den eneste store plass i Europa hvor det er tilfelle.
+                Dogepalasset står ved Markusplassen.</p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>....</p>
+            <img src="steder/Palazzo_Ducale.jpg">
+            <h1>Palazzo Ducale</h1>
+            <p>Dogepalasset er et av de mange kjennemerkene i Venezia. Bygget fungerte som regjeringsbygg og rettslokale. Det var også bolig for Dogen. Det er et av de vesentligste profane gotiske bygg.
+                Palasset ligger som nærmeste nabo til Markuskirken ved Markusplassen. Bak palasset fører en av Venezias mest kjente broer – Sukkenes bro – til fengselet. Mot sørd vender palasset ut mot Canal Grande, bare adskilt av et bredt fortorv.
+                Palasset var forvaltningssentrum og herskerresidens for Republikken Venezia. Det er et glansverk av venezianischer byggekunst også som legemliggjørelse av veneziansk selvfremstilling og propaganda</p>
+        </article>
+    </section>
+
+    <section>
+        <h1>Milano</h1>
+        <article>
+            <img src="steder/La_Scala_Opera.jpg">
+            <h1>La Scala Opera</h1>
+            <p>Teatro alla Scala (også kjent som La Scala) er et av de ledende og mest berømte operahus i verden. Den neoklassisistiske bygningen ble tegnet av Giuseppe Piermarini</p>
+        </article>
+
+        <article>
+            <img src="steder/park.jpg">
+            <h1>Parco Sempione</h1>
+            <p>Ønsker du å komme deg ut i naturen? Dette er en nydelig park hvor man kan slappe av, gå tur og sykle. I tillegg kan man fikke ulige vakre bygninger og fontener.</p>
+        </article>
+
+        <article>
+            <img src="steder/Duomo_di_Milano.jpg">
+            <h1>Duomo di Milano</h1>
+            <p>Duomo di Milano er en katedral i Milano. Katedralen ble påbegynt i 1386 og innviet i 1418, men ble ikke fullført før i 1965. Fasaden ble fullført i 1813 i gotisk stil.
+                Katedralen har rundt 3 500 skulpturer og statuer i fasaden. Disse forestiller helgener, dyr og monstre.
+                Den største statuen befinner seg på toppen av det høyeste spiret, og er en 4 meter høy, gullbelagt statue av jomfru Maria, kalt La Madonnina.</p>
         </article>
     </section>
 

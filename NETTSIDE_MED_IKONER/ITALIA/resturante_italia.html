@@ -2,7 +2,7 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>Italia Hotell</title>
+    <title>Italia Resturante</title>
     <style>
 
         #firekolonner {
@@ -26,15 +26,14 @@
         body > header {
             background-color: white;
             filter: drop-shadow(0px 5px 5px black);
-            margin-bottom: 10px;
         }
 
-        body > header > nav {
+        body > header > {
             display: grid;
             grid-auto-flow: column;
         }
 
-        body > .header > nav > a {
+        body > header > a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
@@ -43,9 +42,10 @@
         }
 
 
-
         body > header >  a > p{
             color: black;
+            text-decoration:none;
+            padding-top: 6px;
         }
 
         body > header > a:hover{
@@ -62,8 +62,17 @@
             text-align: center;
         }
 
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
         body > header > a > img {
-            height: 100px;
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
         }
 
 
@@ -78,12 +87,18 @@
             display: grid;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+
         }
 
-        body > header > nav > a:hover{
-            background-color: orchid;
-            color: white;
+        body > main > section > h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
+
+        body > main > section {
+            margin: 5px;
+        }
+
 
         body > footer {
             background-color: white;
@@ -102,6 +117,31 @@
 
         .understreket {
             text-decoration: underline;
+        }
+
+        @media (max-width: 850px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+            body > header{
+                grid-auto-flow: row;
+            }
+
         }
     </style>
 
@@ -134,73 +174,174 @@
 
 <main id="firekolonner">
     <section>
+        <h1>Firence</h1>
         <article>
-            <img src="...">
-            <h1><a href=....>....</a></h1>
+            <img src="resturante/La%20Bottega%20del%20Buon%20Caffe.jpg">
+            <h1>La Bottega del Buon Caffe</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Vegetarvennlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
         </article>
 
         <article>
-            <img src="....">
-            <h1>...</h1>
+            <img src="resturante/beerhouse.jpeg">
+            <h1>Beer House Club</h1>
+            <ul>
+                <li>Steakhouse</li>
+                <li>Pizza</li>
+                <li>Amerikansk</li>
+                <li>Grill</li>
+                <li>Hurtigmat</li>
+                <li>Vegetarvennelig</li>
+            </ul>
+
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-        </article>
-    </section>
-
-
-    <section>
-        <article>
-            <img src="...">
-            <h1><a href="...">...</a></h1>
-        </article>
-
-        <article>
-            <img src="...">
-            <h1>...</h1>
-        </article>
-
-        <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
-        </article>
-    </section>
-
-
-    <section>
-        <article>
-            <img src="...">
-            <h1><a href="..."></a></h1>
-        </article>
-
-        <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
-        </article>
-
-        <article>
-            <h1>Norge</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="resturante/Caffè_dell'Oro.jpg">
+            <h1>Caffè dell'Oro</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Vegetarvennlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
         </article>
     </section>
 
 
     <section>
+        <h1>Roma</h1>
         <article>
-            <img src="...">
-            <h1>...</h1>
+            <img src="resturante/copy_of_la_pergola_rome.jpg">
+            <h1>La Pergola</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Sjømat</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Vegetarvenlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
         </article>
 
         <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="resturante/ad_hoc.jpeg">
+            <h1>Ad Hoc</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Vegetarvennlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
         </article>
 
         <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="resturante/la-porta-del-principe.jpg">
+            <h1>La Porta Del Principe</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Moderne</li>
+                <li>Vegetarvenlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
+        </article>
+    </section>
+
+
+    <section>
+        <h1>Venezia</h1>
+        <article>
+            <img src="resturante/impronta-cafe2.jpg">
+            <h1>Impronta Cafe</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Pizza</li>
+                <li>Europeisk</li>
+                <li>Veganske alternartiver</li>
+                <li>Vegetarvennlig</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/pizza.jpeg">
+            <h1>Farini</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Kafé</li>
+                <li>Europeisk</li>
+                <li>Vegetarvenlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/All'Arco.jpeg">
+            <h1>All'Arco</h1>
+            <ul>
+                <li>Vegetar vennlig</li>
+                <li>Italiensk</li>
+                <li>Vinbar</li>
+            </ul>
+        </article>
+    </section>
+
+
+    <section>
+        <h1>Milano</h1>
+        <article>
+            <img src="resturante/Seta.jpeg">
+            <h1>Seta</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Sjømat</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Vegetarvenlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/Sapori_Solari.jpg">
+            <h1>Sapori Solari</h1>
+            <ul>
+                <li>Italienk</li>
+                <li>Delikatesser</li>
+                <li>Vinbar</li>
+                <li>Europeisk</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/vun-dettaglio-d8f69.jpg">
+            <h1>VUN Andrea Aprea</h1>
+            <ul>
+                <li>Italiensk</li>
+                <li>Fra middelhavsområdet</li>
+                <li>Europeisk</li>
+                <li>Moderne</li>
+                <li>Vegetarvenlig</li>
+                <li>Veganske alternartiver</li>
+                <li>Glutenfri alternativer</li>
+            </ul>
         </article>
     </section>
 

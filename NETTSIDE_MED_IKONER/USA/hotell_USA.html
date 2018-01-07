@@ -9,8 +9,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
-            margin-left:5px;
-            margin-right:5px;
         }
 
         #firekolonner img {
@@ -23,28 +21,25 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #e8e8e8;
-
         }
 
         body > header {
             background-color: white;
             filter: drop-shadow(0px 5px 5px black);
-            margin-bottom: 10px;
         }
 
-        body > header > nav {
+        body > header > {
             display: grid;
             grid-auto-flow: column;
         }
 
-        body > .header > nav > a {
+        body > header > a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
             text-align: center;
             padding: 10px;
         }
-
 
 
         body > header >  a > p{
@@ -67,8 +62,17 @@
             text-align: center;
         }
 
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
         body > header > a > img {
-            height: 100px;
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
         }
 
 
@@ -83,12 +87,18 @@
             display: grid;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+
         }
 
-        body > header > nav > a:hover{
-            background-color: lightskyblue;
-            color: white;
+        body > main > section > h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
+
+        body > main > section {
+            margin: 5px;
+        }
+
 
         body > footer {
             background-color: white;
@@ -109,6 +119,30 @@
             text-decoration: underline;
         }
 
+        @media (max-width: 850px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+            body > header{
+                grid-auto-flow: row;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -151,7 +185,7 @@
                 <li>Parkering</li>
                 <li>Rullestolvennlig</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -173,7 +207,7 @@
                 <li>Parkering</li>
                 <li>Supermarked</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -196,7 +230,7 @@
                 <li>Rullestolvennlig</li>
                 <li>Tilgjengelig utstyr for døve</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -226,7 +260,7 @@
                 <li>Supermarked</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -254,7 +288,7 @@
                 <li>Supermarked</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -286,7 +320,7 @@
                 <li>Kjæledyr tillatt</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -316,7 +350,7 @@
                 <li>Rullestolvennlig</li>
                 <li>Kjæledyr tillatt</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -340,7 +374,7 @@
                 <li>Rullestolvennlig</li>
                 <li>Kjæledyr tillatt</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -367,7 +401,7 @@
                 <li>Supermarked</li>
                 <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Treningsrom</li>
                 <li>Restaurante</li>
@@ -385,16 +419,14 @@
         <h1>Hollywood</h1>
         <article>
             <img src="hoteller/hotell10.jpeg">
-            <h1>...</h1>
-            <br>
-            <p>...</p>
+            <h1>The Hollywood Roosevelt</h1>
             <br>
             <ul>
                 <li>Gratis Wi-Fi</li>
                 <li>Kjæledyr tillatt</li>
                 <li>Aircondition</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
                 <li>Basseng</li>
                 <li>Restaurant</li>
@@ -407,33 +439,46 @@
 
         <article>
             <img src="hoteller/Hotell11.jpeg">
-            <h1>...</h1>
-            <br>
-            <p>...</p>
+            <h1>The Blvd Hotel & Suites</h1>
             <br>
             <ul>
-                ....
-            </ul>
-            <p>...</p>
-            <ul>
-                ....
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Supermarked</li>
+                <li>Terrasse</li>
             </ul>
             <br>
+            <ul>
+                <li>Basseng</li>
+                <li>Restaurant</li>
+                <li>Spa</li>
+                <li>Treningsrom</li>
+            </ul>
             <a href="https://www.trivago.no/go/a79dkd1">Se tilbud</a>
         </article>
 
         <article>
             <img src="hoteller/hotell12.jpeg">
-            <h1>...</h1>
-            <br>
-            <p>...</p>
+            <h1>W Hollywood</h1>
             <br>
             <ul>
-                ....
+                <li>Gratis Wi-Fi</li>
+                <li>Aircondition</li>
+                <li>Parkering</li>
+                <li>Rullestolvennlig</li>
+                <li>Kjæledyr tillatt</li>
+                <li>Supermarked</li>
+                <li>Terrasse</li>
             </ul>
-            <p>...</p>
+            <br>
             <ul>
-                ....
+                <li>Basseng</li>
+                <li>Restaurant</li>
+                <li>Spa</li>
+                <li>Treningsrom</li>
             </ul>
             <br>
             <a href="https://www.trivago.no/go/a79dkkt">Se tilbud</a>

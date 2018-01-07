@@ -3,108 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <title>Italia Hotell</title>
-<style>
+    <style>
 
-    #firekolonner {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-    }
+        #firekolonner {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
 
-    #firekolonner img {
-        width: 100%;
-    }
+        #firekolonner img {
+            width: 100%;
+        }
 
-    #firekolonner article {
-        background-color: #eee;
-        margin-bottom: 15px;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 1px solid #e8e8e8;
-    }
+        #firekolonner article {
+            background-color: #eee;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+        }
 
-    body > header {
-        background-color: white;
-        filter: drop-shadow(0px 5px 5px black);
-        margin-bottom: 10px;
-    }
+        body > header {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+        }
 
-    body > header > nav {
-        display: grid;
-        grid-auto-flow: column;
-    }
+        body > header > {
+            display: grid;
+            grid-auto-flow: column;
+        }
 
-    body > .header > nav > a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        text-align: center;
-        padding: 10px;
-    }
-
+        body > header > a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
 
 
-    body > header >  a > p{
-        color: black;
-    }
+        body > header >  a > p{
+            color: black;
+            text-decoration:none;
+            padding-top: 6px;
+        }
 
-    body > header > a:hover{
-        background-color: lightskyblue;
-        color: white;
-    }
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
 
-    body > header {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: grid;
-        grid-gap: 20px;
-        grid-auto-flow: column;
-        text-align: center;
-    }
+        body > header {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            text-align: center;
+        }
 
-    body > header > a > img {
-        height: 100px;
-    }
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
 
+        body > header > a > img {
+            height:100px;
+        }
 
-    *{
-        margin: 0;
-    }
-
-    body{
-        margin: 0;
-        background-color:white;
-        font-family: sans-serif;
-        display: grid;
-        min-height: 100vh;
-        grid-template-rows: auto 1fr auto;
-    }
-
-    body > header > nav > a:hover{
-        background-color: orchid;
-        color: white;
-    }
-
-    body > footer {
-        background-color: white;
-        filter: drop-shadow(0px 5px 5px black);
-        display: grid;
-    }
-
-    body > footer > p {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        text-align: left;
-        padding: 10px;
-    }
+        body > header > h1 {
+            text-align: center;
+        }
 
 
-    .understreket {
-        text-decoration: underline;
-    }
-</style>
+        *{
+            margin: 0;
+        }
 
+        body{
+            margin: 0;
+            background-color:white;
+            font-family: sans-serif;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+
+        }
+
+        body > main > section > h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        body > main > section {
+            margin: 5px;
+        }
+
+
+        body > footer {
+            background-color: white;
+            filter: drop-shadow(0px 5px 5px black);
+            display: grid;
+        }
+
+        body > footer > p {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+        }
+
+
+        .understreket {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 850px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+            body > header{
+                grid-auto-flow: row;
+            }
+
+        }
+
+
+    </style>
 </head>
 <body>
 
@@ -134,73 +175,141 @@
 
 <main id="firekolonner">
     <section>
+        <h1>New York</h1>
         <article>
-            <img src="...">
-            <h1><a href=....>....</a></h1>
+            <img src="resturante/pannekaker.jpg">
+            <h1>Rise and Shine</h1>
+            <ul>
+                <li>frokost</li>
+                <li>Kafé</li>
+            </ul>
         </article>
 
         <article>
-            <img src="....">
-            <h1>...</h1>
+            <img src="resturante/burger.jpg">
+            <h1>Prince</h1>
+            <ul>
+                <li>Amerikansk</li>
+                <li>Øl</li>
+                <li>Pasta</li>
+            </ul>
         </article>
 
         <article>
-            <img src="...">
-            <h1>...</h1>
-        </article>
-    </section>
+            <img src="resturante/resturanteview2.jpg">
+            <h1>Sky</h1>
+            <ul>
+                <li>forretter</li>
+                <li>pasta</li>
+                <li>Salat</li>
+                <li>Kjøtt</li>
+                <li>Fisk</li>
+                <li>dessert</li>
+            </ul>
 
-
-    <section>
-        <article>
-            <img src="...">
-            <h1><a href="...">...</a></h1>
-        </article>
-
-        <article>
-            <img src="...">
-            <h1>...</h1>
-        </article>
-
-        <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
-        </article>
-    </section>
-
-
-    <section>
-        <article>
-            <img src="...">
-            <h1><a href="..."></a></h1>
-        </article>
-
-        <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
-        </article>
-
-        <article>
-            <h1>Norge</h1>
-            <p>fdfsdf fsdf</p>
         </article>
     </section>
 
 
     <section>
+        <h1>Orlando</h1>
         <article>
-            <img src="...">
-            <h1>...</h1>
+            <img src="resturante/resturante1.jpg">
+            <h1>Mamma mia pizzeria</h1>
+            <ul>
+                <li>Pizza</li>
+                <li>Pasta</li>
+            </ul>
         </article>
 
         <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="resturante/hard%20rock.jpg">
+            <h1>Hard Rock Cafe</h1>
+            <ul>
+                <li>burger</li>
+                <li>Biff</li>
+            </ul>
         </article>
 
         <article>
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="resturante/BJ.jpg" alt="">
+            <h1>BJ´s</h1>
+            <ul>
+                <li>burger</li>
+                <li>pasta</li>
+                <li>forretter</li>
+                <li>lemonade</li>
+                <li>tapas</li>
+            </ul>
+        </article>
+    </section>
+
+
+    <section>
+        <h1>San Francisco</h1>
+        <article>
+            <img src="resturante/resturantview.jpg">
+            <h1>Bella</h1>
+            <ul>
+                <li>tapas</li>
+                <li>mexicansk</li>
+                <li>Amerikansk</li>
+                <li>Italiensk</li>
+                <li>Vin</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/applebees.jpg" alt="">
+            <h1>Applebees</h1>
+            <ul>
+                <li>pizza</li>
+                <li>salat</li>
+                <li>Pasta</li>
+                <li>Kjøtt</li>
+                <li>burger</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/chowders-pier-39.jpg" alt="">
+            <h1>Chowders</h1>
+           <ul>
+               <li>skjømat</li>
+           </ul>
+        </article>
+    </section>
+
+
+    <section>
+        <h1>Hollywood</h1>
+        <article>
+            <img src="resturante/waynees.jpg">
+            <h1>Waynees</h1>
+            <ul>
+                <li>burger</li>
+                <li>milkshake</li>
+                <li>Is</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/svampebob.jpg" alt="">
+            <h1>krusty krab </h1>
+            <ul>
+                <li>burger</li>
+            </ul>
+        </article>
+
+        <article>
+            <img src="resturante/cinema.jpg" alt="">
+            <h1>Cinema</h1>
+            <ul>
+                <li>Amerikansk</li>
+                <li>Burger</li>
+                <li>fries</li>
+                <li>kylling</li>
+            </ul>
         </article>
     </section>
 

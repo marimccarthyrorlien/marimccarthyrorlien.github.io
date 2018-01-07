@@ -5,6 +5,7 @@
     <title>Title</title>
     <style>
 
+
         #firekolonner {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -26,15 +27,14 @@
         body > header {
             background-color: white;
             filter: drop-shadow(0px 5px 5px black);
-            margin-bottom: 10px;
         }
 
-        body > header > nav {
+        body > header > {
             display: grid;
             grid-auto-flow: column;
         }
 
-        body > .header > nav > a {
+        body > header > a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
@@ -43,9 +43,10 @@
         }
 
 
-
         body > header >  a > p{
             color: black;
+            text-decoration:none;
+            padding-top: 6px;
         }
 
         body > header > a:hover{
@@ -62,8 +63,17 @@
             text-align: center;
         }
 
+        body > header > a:hover{
+            background-color: lightskyblue;
+            color: white;
+        }
+
         body > header > a > img {
-           height: 100px;
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
         }
 
 
@@ -78,12 +88,18 @@
             display: grid;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+
         }
 
-        body > header > nav > a:hover{
-            background-color: orchid;
-            color: white;
+        body > main > section > h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
+
+        body > main > section {
+            margin: 5px;
+        }
+
 
         body > footer {
             background-color: white;
@@ -102,6 +118,31 @@
 
         .understreket {
             text-decoration: underline;
+        }
+
+        @media (max-width: 850px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+            body > header{
+                grid-auto-flow: row;
+            }
+
         }
     </style>
 
@@ -138,16 +179,19 @@
         <article>
             <img src="steder/Kahului-HelicopterTour.jpg">
             <h1>Helicopter Tour</h1>
+            <p>se Hawaii fra luften</p>
         </article>
 
         <article>
             <img src="steder/Kahulului_AquaSports.jpg">
             <h1>Aqua Sports</h1>
+            <p>Morsomme aktiviteter og utfordringer for både barn og voksne.</p>
         </article>
 
         <article>
             <img src="steder/Kahulului_HikeMaui.jpg">
             <h1>Mike Maui</h1>
+            <p>Gå på en hike og få med deg den flotte naturen til Hawaii</p>
         </article>
     </section>
 
@@ -157,41 +201,42 @@
         <article>
             <img src="steder/KoOlina_BeachPark.jpg">
             <h1>Ko Olina Beach Park</h1>
-            <p>...</p>
+            <p>flere strenger på rad med leker og akriviteter for alle. </p>
         </article>
 
         <article>
             <img src="steder/KoOlina_GolfClub.jpg">
             <h1>Ko Olina Golf Club</h1>
-            <p>...</p>
+            <p>Fine golfbaner med mange forskjellige hull i ulike nivåer.</p>
         </article>
 
         <article>
             <img src="steder/KoOlina_WatherPark.jpg">
             <h1>Wather Park</h1>
-            <p>...</p>
+            <p>Gøy for både voksene og barn. En dag for lek, morro og cool off fra varmen.</p>
         </article>
     </section>
 
 
     <section>
-        <h1>....</h1>
+        <h1>Hilo</h1>
         <article>
-            <img src="...">
-            <h1>...</h1>
-            <p>...</p>
+            <img src="steder/rainbow.jpg">
+            <h1>Rainbow Falls</h1>
+            <p>"Ut på tur, aldri sur". Flott natur og et herlig sted å bade.</p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>MOMS</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="steder/vulkan.jpg">
+            <h1>Volcanoes and Waterfall Extreme</h1>
+            <p>45min tur med åpendør ride i helikopter.</p>
+            <p>Pris fra 2675kr.</p>
         </article>
 
         <article>
-            <img src="...">
-            <h1>Norge</h1>
-            <p>fdfsdf fsdf</p>
+            <img src="steder/imiloa-astronomy-center.jpg">
+            <h1>Imiloa Astronomy Center</h1>
+            <p>Naturvitenskapelige museer, observatorier og planetarier</p>
         </article>
     </section>
 
@@ -201,18 +246,19 @@
         <article>
             <img src="steder/Waikki_aquarium.jpg">
             <h1>Waikki Aquarium</h1>
+            <p>Spennede for store og små. Mange ulike dyr. Nesten som å være på havbunnen med de.</p>
         </article>
 
         <article>
             <img src="steder/Waikki_HonoluluZoo.jpg">
             <h1>Honolulu Zoo</h1>
-            <p>...</p>
+            <p>Mange dyr å se på. God pris og mye morro.</p>
         </article>
 
         <article>
             <img src="steder/Waikki_ØyUtflukt.jpg">
             <h1>Waikki Øyutflukt</h1>
-            <p>fdfsdf fsdf</p>
+            <p>Dra på en utflukt for å lære og se mye nytt.</p>
         </article>
     </section>
 

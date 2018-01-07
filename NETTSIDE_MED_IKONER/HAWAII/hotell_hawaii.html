@@ -9,8 +9,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
-            margin-left:5px;
-            margin-right:5px;
         }
 
         #firekolonner img {
@@ -23,28 +21,25 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #e8e8e8;
-
         }
 
         body > header {
             background-color: white;
             filter: drop-shadow(0px 5px 5px black);
-            margin-bottom: 10px;
         }
 
-        body > header > nav {
+        body > header > {
             display: grid;
             grid-auto-flow: column;
         }
 
-        body > .header > nav > a {
+        body > header > a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
             text-align: center;
             padding: 10px;
         }
-
 
 
         body > header >  a > p{
@@ -67,13 +62,17 @@
             text-align: center;
         }
 
-        body > header > a > img {
-            height: 100px;
-        }
-
-        body > header > nav > a:hover{
+        body > header > a:hover{
             background-color: lightskyblue;
             color: white;
+        }
+
+        body > header > a > img {
+            height:100px;
+        }
+
+        body > header > h1 {
+            text-align: center;
         }
 
 
@@ -88,11 +87,18 @@
             display: grid;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+
         }
 
-        body > main  > section > h1 {
+        body > main > section > h1{
             margin-bottom: 10px;
+            margin-top: 10px;
         }
+
+        body > main > section {
+            margin: 5px;
+        }
+
 
         body > footer {
             background-color: white;
@@ -113,7 +119,33 @@
             text-decoration: underline;
         }
 
+        @media (max-width: 850px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr 1fr;
+            }
+            body > header > a > img {
+                height:70px;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            #firekolonner {
+                grid-template-columns: 1fr;
+            }
+            body > header > a > img {
+                height:50px;
+            }
+            body > header{
+                grid-auto-flow: row;
+            }
+
+        }
     </style>
+
+
 </head>
 <body>
 
@@ -146,23 +178,29 @@
                 <img src="hoteller/Leilighetshotell2.jpg">
                 <h1>Polo Beach Club</h1>
                 <p>Ligger 32min biltur unna Kahului flyplass</p>
-                <p>Leilighetshotell som ligger nærme stranden. Det finnes også Basseng på hotellet.</p>
-                <p>Gratis parkering finnes på stedet</p>
-                <p>Gratis Wifi</p>
+                <p>Leilighetshotell som ligger nærme stranden.</p>
+                <br>
+                <ul>
+                    <li>Gratis parkering</li>
+                    <li>Gratis Wifi</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>Basseng</li>
+                </ul>
                 <a href="https://www.booking.com/hotel/us/polo-beach-club-destination-resort-hawaii.no.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGiqAYgBAZgBHbgBB8gBDNgBA-gBAZICAXmoAgM;sid=0863c9be905351e5439806fc1f9be9b6;age=12;age=12;age=12;checkin=2017-12-24;checkout=2017-12-25;dest_id=2996;dest_type=region;dist=0;group_adults=2;group_children=3;hapos=3;hpos=3;no_rooms=1;req_adults=2;req_age=12;req_age=12;req_age=12;req_children=3;room1=A%2CA%2C12%2C12%2C12;sb_price_type=total;soh=1;soldout=0%2C0;srepoch=1513241816;srfid=a0adb2a94e1dc3d5e2fe06f31f9b642f7918a97fX3;srpvid=af343eeb9f66007d;type=total;ucfs=1&#no_availability_msg">Se tilbud</a>
             </article>
 
             <article>
                 <img src="hoteller/hotell8.jpg">
                 <h1>Maui Beach Hotel</h1>
-                <p>Sted: Kahului</p>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Gratis Wi-Fi</li>
                     <li>Parkeringsplass</li>
                     <li>Røykfrie rom</li>
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Basseng</li>
                     <li>Bar</li>
@@ -182,7 +220,7 @@
                     <li>Air condition</li>
                     <li>Gratis flyplasstransport</li>
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Utendørs basseng</li>
                     <li>Restaurant</li>
@@ -198,15 +236,14 @@
             <article>
                 <img src="hoteller/hotell6.jpg">
                 <h1>Four Seasons Hotels and Resorts</h1>
-                <p>Sted: Ko Olina </p>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Gratis WiFi</li>
                     <li>Privat parkeringsplass</li>
                     <li>Familievennlig</li>
                     <li>Strandliv</li>
                 </ul>
-                <p>Aktiviteter</p>
+                <br>
                 <ul>
                     <li>Treningsstudio</li>
                     <li>Tennisbane</li>
@@ -219,14 +256,13 @@
             <article>
                 <img src="hoteller/hotell7.jpg">
                 <h1>Beach Villa</h1>
-                <p>Sted: Ko Olina</p>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Gratis parkering</li>
                     <li>Gratis Wi-Fi</li>
                     <li>Beliggenhet ved stranden</li>
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>basseng</li>
                     <li>bar</li>
@@ -242,7 +278,7 @@
                     <li>Gratis Wi-Fi</li>
                     <li>Ligger på stranden</li>
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Barnebasseng</li>
                     <li>Lekeplass</li>
@@ -259,67 +295,66 @@
         </section>
 
         <section>
-            <h1>Forskjellig...</h1>
+            <h1>Hilo</h1>
             <article>
-                <img src="hoteller/leilighetshotell.jpg">
-                <h1>Grand Wailea Resort Hotel & Spa</h1>
+                <img src="hoteller/last%20ned.jpeg">
+                <h1>Hilo Hawaiian Hotel</h1>
                 <br>
-                <p> Wailea</p>
-                <br>
-                <p>Leilighetshotell hvor det er tillat med kjæledyr.</p>
-                <p>Aktiviteter</p>
+                <p>4.6km fra sentrum</p>
                 <ul>
-                    <li>spa og velværeavdeling</li>
-                    <li>likeplass</li>
-                    <li>tennisbane</li>
-                    <li>dykking</li>
-                    <li>kanopadling</li>
-                    <li>sykkelutleie</li>
+                    <li>rullestolvennlig</li>
+                    <li>aircondition</li>
+                    <li>Wi-Fi</li>
                 </ul>
-                <a href="https://www.booking.com/hotel/us/grand-wailea-resort-spa.no.html?label=gen173nr-1FCAEoggJCAlhYSDNYBGiqAYgBAZgBHbgBB8gBDNgBAegBAfgBC5ICAXmoAgM;sid=0863c9be905351e5439806fc1f9be9b6;age=12;age=12;age=12;all_sr_blocks=4898429_97564252_5_0_0;checkin=2017-12-24;checkout=2017-12-25;dest_id=3183;dest_type=region;dist=0;group_adults=2;group_children=3;hapos=12;highlighted_blocks=4898429_97564252_5_0_0;hpos=12;no_rooms=1;req_adults=2;req_age=12;req_age=12;req_age=12;req_children=3;room1=A%2CA%2C12%2C12%2C12;sb_price_type=total;srepoch=1513684008;srfid=06f18c5d1347e6a58e7f7c6669ca09b6a1d40452X12;srpvid=a0ca52d30266010f;type=total;ucfs=1&#hotelTmpl">Se tilbud</a>
+                <br>
+                <ul>
+                    <li>Svømmebasseng</li>
+                    <li>Spa</li>
+                    <li>Hotellbar</li>
+                    <li>Resturanter</li>
+                </ul>
+                <a href="https://www.trivago.no/go/a79xr05">Se tilbud</a>
             </article>
 
             <article>
-                <img src="hoteller/Hotell1.jpg">
-                <h1>The Ritz-Carton</h1>
+                <img src="hoteller/hotellrom.jpg">
+                <h1>Grand Naniloa Hotel Hilo - a DoubleTree by Hilton</h1>
                 <br>
-                <p>Kapalua</p>
+                <p>4.8 km til Sentrum</p>
                 <br>
-                <p>Familievennlig</p>
-                <p>Ligger nærme sentrum, strand og flyplass</p>
-                <p>Privat parkeringsplass</p>
-                <p>Rom med:</p>
                 <ul>
-                    <li> Gratis Wifi</li>
-                    <li> Balkong med utsikt</li>
-                    <li> Uteplass</li>
-                    <li> Utsikt mot sjø, hage eller basseng</li>
+                    <li>rullestolvennlig</li>
+                    <li>aircondition</li>
+                    <li>Wi-Fi</li>
                 </ul>
-                <p>Aktiviteter:</p>
+                <br>
                 <ul>
-                    <li>Tennisbane</li>
-                    <li>Treningstudio</li>
-                    <li>Golfbane (3km unna)</li>
+                    <li>Svømmebasseng</li>
+                    <li>Hotellbar</li>
+                    <li>Resturanter</li>
                 </ul>
-                <a href="https://www.booking.com/hotel/us/the-ritz-carlton-kapalua.no.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGiqAYgBAZgBHbgBB8gBDNgBA-gBAZICAXmoAgM;sid=0863c9be905351e5439806fc1f9be9b6;age=12;age=12;age=12;all_sr_blocks=2329018_94237737_0_42_0;checkin=2017-12-24;checkout=2017-12-25;dest_id=2996;dest_type=region;dist=0;group_adults=2;group_children=3;hapos=7;highlighted_blocks=2329018_94237737_0_42_0;hpos=7;no_rooms=1;req_adults=2;req_age=12;req_age=12;req_age=12;req_children=3;room1=A%2CA%2C12%2C12%2C12;sb_price_type=total;srepoch=1513245212;srfid=dcbd7f24a467749f476ff138ef6ba24644d5afc5X7;srpvid=e12e458dfbb4008c;type=total;ucfs=1&#hotelTmpl">Se tilbud</a>
+                <a href="https://www.trivago.no/go/a79xrjj">Se tilbud</a>
             </article>
 
             <article>
-                <img src="hoteller/hotell5.jpg">
-                <h1>Best Western The Plaza Hotel</h1>
-                <p>Sted: Honolulu</p>
-                <p>...</p>
+                <img src="hoteller/10565611_32_z.jpg">
+                <h1>Hilo Reeds Bay</h1>
+                <br>
+                <p>4.8 km til Sentrum</p>
+                <br>
                 <ul>
-                    <li>Parkeringsplass</li>
-                    <li>Privat skyttelbuss (kostnadsfritt). 5 min til flyplass</li>
+                    <li>terasse</li>
+                    <li>aircondition</li>
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
-                    <li>Basseng</li>
-                    <li>Gratis wifi</li>
+                    <li>Svømmebasseng</li>
+                    <li>Hotellbar</li>
+                    <li>Resturanter</li>
                 </ul>
-                <a href="https://www.booking.com/hotel/us/best-western-the-plaza.no.html?aid=304142;label=gen173nr-1FCAEoggJCAlhYSDNYBGiqAYgBAZgBHbgBB8gBDNgBAegBAfgBC5ICAXmoAgM;sid=0863c9be905351e5439806fc1f9be9b6;age=12;age=12;age=12;dest_id=20030916;dest_type=city;dist=0;group_adults=2;group_children=3;hapos=4;hpos=4;no_rooms=1;req_adults=2;req_age=12;req_age=12;req_age=12;req_children=3;room1=A%2CA%2C12%2C12%2C12;sb_price_type=total;srepoch=1514925428;srfid=3661872f70864db41f6e4cb64b00900c2d472865X4;srpvid=3b8e90f9804b0407;type=total;ucfs=1&#hotelTmpl">Se tilbud</a>
+                <a href="https://www.trivago.no/go/a79xzz1">Se tilbud</a>
             </article>
+
         </section>
 
         <section>
@@ -327,8 +362,7 @@
             <article>
                 <img src="hoteller/hotell3.jpg">
                 <h1>Alohilani Resort</h1>
-                <p>Sted: Waikiki Beach</p>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>bar</li>
                     <li>basseng</li>
@@ -344,8 +378,7 @@
             <article>
                 <img src="hoteller/hotell12.jpeg">
                 <h1>The Royal Hawaiian, A Luxury Collection Resort</h1>
-                <p>Sted: Waikiki</p>
-                <p>.....</p>
+                <br>
                 <ul>
                     <li>Familievennlig</li>
                     <li>Strandliv</li>
@@ -353,7 +386,7 @@
                     <li>Aircondition</li>
 
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>Bar</li>
                     <li>Basseng</li>
@@ -367,8 +400,7 @@
             <article>
                 <img src="hoteller/hotell4.jpg">
                 <h1>The Royal Hawaiian, A Luxury Collection Resort</h1>
-                <p>Sted: Waikiki</p>
-                <p>.....</p>
+                <br>
                 <ul>
                     <li>Familievennlig</li>
                     <li>Strandliv</li>
@@ -376,7 +408,7 @@
                     <li>Parkeringsplass</li>
                     <li>Røykfrie rom</li>
                 </ul>
-                <p>...</p>
+                <br>
                 <ul>
                     <li>bar</li>
                     <li>basseng</li>
