@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>The Chat</title>
+</head>
+<body>
+
+<header>
+    <input type="text" placeholder="Skriv en melding til din venn" id="inpMelding">
+</header>
+
+<main id="main"></main>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyB3JMHbJj4Nqu_RUa4GLJIgDP4KszcDlTw",
+        authDomain: "it01-af196.firebaseapp.com",
+        databaseURL: "https://it01-af196.firebaseio.com",
+        projectId: "it01-af196",
+        storageBucket: "it01-af196.appspot.com",
+        messagingSenderId: "1016139188462"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script>
+    const inpMelding = document.getElementById("inpMelding");
+    const main = document.getElementById("main");
+
+    const db = firebase.database();
+    const meldinger = db.ref("meldinger");
+
+
+    function lagreMelding() {
+        meldinger.push(inpMelding.value);
+        inpMelding.value = "";
+    }
+
+    function visMelding(snap) {
+        const melding = snap.val();
+        main.innerHTML= `<p>${melding}</p>`+ main.innerHTML;
+
+    }
+
+    inpMelding.onchange = lagreMelding;
+    meldinger.on("child_added", visMelding);
+
+
+
+</script>
+
+</body>
+</html>

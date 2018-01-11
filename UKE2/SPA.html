@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Page Aplication</title>
+</head>
+<body>
+
+    <form id="skjema">
+        <input type="text" id="q">
+        <button type="submit">SØK</button>
+    </form>
+
+    <script>
+
+        function finnBil(evt) {
+            evt.preventDefault();  // ikke gjør det du pleier//
+
+        }
+        const skjema = document.getElementById("skjema");
+        skjema.onsubmit = finnBil; // Søke etter bilder
+
+
+    </script>
+</body>
+</html>
