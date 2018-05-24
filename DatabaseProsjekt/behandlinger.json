@@ -1,0 +1,47 @@
+
+{
+  "behandlinger": {
+    "røntgen": {
+      "navn":"Røntgen",
+      "pris": 290,
+      "lege": ["Lisa Torfinsen","Peder Kvaal"],
+      "avdeling": "a",
+      "bilde": "røntgen.jpg"
+    },
+    "ortopedisk":{
+      "navn":"Ortopedisk",
+      "pris":1000,
+      "lege": ["Lisa Torfinsen","Peder Kvaal", "Sofie Torp"],
+      "avdeling":"c",
+      "bilde":"ortopedisk.jpg"
+    },
+    "revmatologisk":{
+      "navn": "Revmatologisk",
+      "pris": 400,
+      "lege": ["Fredrik Pedersen","Peder Kvaal"],
+      "avdeling": "b",
+      "bilde": "revmatorisk.jpeg"
+    },
+    "bentetthetsmåling":{
+      "navn":"Bentetthetsmåling",
+      "pris": 300,
+      "lege": ["Fredrik Pedersen","Sofie Torp", "Lisa Torfinsen"],
+      "avdeling": "a",
+      "bilde": "bentetthetsmåling.jpg"
+    },
+    "opptrening":{
+      "navn": "Opptrening",
+      "pris":"gratis",
+      "lege": ["Lisa Torfinsen","Peder Kvaal"],
+      "avdeling":"d",
+      "bilde": "opptrenin.jpg"
+    },
+    "fysioterapi":{
+      "navn":"Fysioterapi",
+      "pris": 500,
+      "lege": ["Fredrik Pedersen","Peder Kvaal", "Lisa Torfinsen", "Sofie Torp"],
+      "avdeling": "e",
+      "bilde": "fysioterapi.jpg"
+    }
+  }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chat</title>
+	<style>
+		
+		body {
+			margin: 0;
+		}
+		
+		body > header {
+			background-color: lightgray;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+			align-items: end;
+		}
+		
+		body > header > img{
+			width: 110px;
+			height: 106px;
+		}
+		
+		
+		body > header > a {
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			text-align: center;
+			padding: 10px;
+			
+		}
+		
+		body > header > input{
+			text-align: right;
+		}
+		
+		body > main {
+			margin-bottom: 5px;
+			
+		}
+		
+		#chat {
+			max-width: 600px;
+			height: 500px;
+			margin: auto;
+			background-color: #eeeeee;
+			display: grid;
+			grid-template-rows: 1fr auto;
+			margin-top:10px;
+		}
+		
+		#chat > footer > form {
+			display: grid;
+			grid-template-columns: 1fr auto;
+		}
+		
+		#chat > main {
+			
+			display: grid;
+			overflow-y: scroll;
+		}
+		
+		main > div {
+			padding: 10px;
+		}
+		.you {
+			text-align: left;
+			background-color: darkgray;
+			padding: 10px;
+		}
+		.me {
+			text-align: right;
+			background-color: lightgrey;
+			padding: 10px;
+		}
+		
+		footer{
+			background-color: lightgrey;
+			padding: 10px;
+			text-decoration: none;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<header>
+		<img src="MMhjertefade-01.png">
+		<h1>McCarthy Medisin</h1>
+		<form>
+			<input type="text" id="q" placeholder="søk...">
+			<button type="submit" id="b">Søk</button>
+		</form>
+	
+	
+	</header>
+
+	<section id="chat">
+		
+		<main id="main">
+			<div class="you" >
+				Hei, har du noe du lurer på? Send meg gjerne en melding :)
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div class="me">
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+			<div>
+				dsfsdfsdf
+			</div>
+			<div>
+				sdfsdfsd
+			</div>
+		</main>
+		<footer>
+			<form id="skjema">
+				<textarea id="inpMelding"></textarea>
+				<button type="submit">Send</button>
+			</form>
+			
+		</footer>
+	</section>
+	
+	<footer>
+		<p>adr: Solbakkeveien 74 0026 Oslo</p>
+		<p>telf: 67890123</p>
+	</footer>
+	
+	
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBjyW_QujuwvxPBKLp_UDiAJOr9s6kGiJw",
+            authDomain: "prosjekt-cf708.firebaseapp.com",
+            databaseURL: "https://prosjekt-cf708.firebaseio.com",
+            projectId: "prosjekt-cf708",
+            storageBucket: "prosjekt-cf708.appspot.com",
+            messagingSenderId: "449603963892"
+        };
+        firebase.initializeApp(config);
+	</script>
+	
+	
+	<script>
+        const inpMelding = document.getElementById("inpMelding");
+        const main = document.getElementById("main");
+        const skjema = document.getElementById("skjema");
+        
+
+
+        const db = firebase.database();
+        const meldinger = db.ref("meldinger");
+
+
+        function lagreMelding(evt) {
+            evt.preventDefault();
+            meldinger.push(inpMelding.value);
+            inpMelding.value = "";
+        }
+
+        function visMelding(snap) {
+            const melding = snap.val();
+            
+            
+            
+            main.innerHTML += `<p class="me">${melding}</p>`;
+
+        }
+
+        skjema.onsubmit = lagreMelding;
+        meldinger.on("child_added", visMelding);
+	
+	
+	
+	</script>
+
+
+</body>
+</html>

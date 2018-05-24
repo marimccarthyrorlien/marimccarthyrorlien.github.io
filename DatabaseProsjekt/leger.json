@@ -1,0 +1,18 @@
+{
+  "lege001" : {
+    "fornavn" : "Fredrik",
+    "etternavn" : "Pedersen"
+  },
+  "lege002" : {
+    "fornavn" : "Sofie",
+    "etternavn" : "Torp"
+  },
+  "lege003" : {
+    "fornavn": "Lisa",
+    "etternavn": "Torfinsen"
+  },
+  "lege004" : {
+    "fornavn": "Peder",
+    "etternavn": "Kvaal"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chat med en lege</title>
+	<style>
+		main > input{
+			max-width: 500px;
+			max-height: 400px;
+			min-height: 200px;
+			min-width: 400px;
+		}
+		
+		main > textarea{
+			max-width: 500px;
+			max-height: 400px;
+			min-height: 200px;
+			min-width: 400px;
+		}
+	</style>
+</head>
+<body>
+
+<header></header>
+
+<main id="main">
+	<input type="text" placeholder="Skriv en melding til din venn" id="inpMelding">
+	<textarea placeholder="skriv her..."></textarea>
+
+</main>
+
+<footer></footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBjyW_QujuwvxPBKLp_UDiAJOr9s6kGiJw",
+        authDomain: "prosjekt-cf708.firebaseapp.com",
+        databaseURL: "https://prosjekt-cf708.firebaseio.com",
+        projectId: "prosjekt-cf708",
+        storageBucket: "prosjekt-cf708.appspot.com",
+        messagingSenderId: "449603963892"
+    };
+    firebase.initializeApp(config);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bestill Time</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.css">
+	<style>
+		
+		
+		body {
+			margin: 0;
+		}
+		
+		body > header {
+			background-color: lightgray;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+			align-items: end;
+		}
+		
+		body > header > a > img{
+			width: 110px;
+			height: 106px;
+		}
+		
+		nav{
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: 1fr 1fr 1fr;
+			background-color:white;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		nav > a{
+			text-decoration: none;
+			color: black;
+			border: 5px solid lightgrey;
+			padding: 10px;
+		}
+		
+		body > header > a {
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			text-align: center;
+			padding: 10px;
+			
+		}
+		
+		body > header > input{
+			text-align: right;
+		}
+		
+		
+		body > main {
+			padding: 10px;
+			
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+			
+			
+		}
+		
+		body > main > img{
+		
+		}
+		
+		
+		main > form > input {
+			display: block;
+			padding: 5px;
+			
+		}
+		
+		
+		main > div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		main > form > select{
+			display: block;
+			padding: 5px;
+		}
+		
+		Main > form > textarea{
+			min-height: 150px;
+		}
+		
+		
+		footer{
+			background-color: lightgrey;
+			padding: 10px;
+			text-decoration: none;
+		}
+		
+		
+		#q{
+			width: 200px;
+			height: 20px;
+		}
+		
+		#b{
+			width: 50px;
+			height:25px;
+		}
+		
+		.button {
+			background-color: red;
+		}
+		.button:hover {
+			background-color: lightslategray;
+			color: #383838;
+		}
+		
+		@media (max-width: 1000px) {
+			
+			
+			body > main {
+				grid-template-columns: 1fr;
+			}
+			
+			body > main > div {
+				order: 1;
+			}
+			body > main > form {
+				order: 2;
+			}
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+	<header>
+		<a href="index.html"><img src="MMhjertefade-01.png"></a>
+		<h1>McCarthy Medisin</h1>
+	</header>
+	
+	<nav>
+		<a href="index.html">Startside</a>
+		<a href="Behandlingstilbud.html">Behandlingstilbud</a>
+		<a href="OmOss.html">Om oss</a>
+	</nav>
+	
+	<main>
+		<form id="skjema">
+			<input type="text" id="inpNavn" required placeholder="Hva heter du?" autocomplete="off">
+			<input type="date" id="inpDate" required>
+			<input type="time" id="inpTime" required>
+			<select name="VelgLege" id="VelgLege" required>
+				<option value="">Velg lege</option>
+				<option value="Første ledig">Første ledig</option>
+			</select>
+			<textarea id="taBeskrivelse" placeholder="Hva trenger du time for..?"></textarea>
+			<button class="button expanded" type="submit" id="c">Bestill</button>
+		</form>
+		<div>
+			<img src="timeknapp.png">
+		</div>
+		
+	</main>
+	
+	<footer>
+		<p>adr: Solbakkeveien 74</p>
+		<p>telf: 67890123</p>
+	</footer>
+	
+	
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script>
+	    // Initialize Firebase
+	    var config = {
+	        apiKey: "AIzaSyBjyW_QujuwvxPBKLp_UDiAJOr9s6kGiJw",
+	        authDomain: "prosjekt-cf708.firebaseapp.com",
+	        databaseURL: "https://prosjekt-cf708.firebaseio.com",
+	        projectId: "prosjekt-cf708",
+	        storageBucket: "prosjekt-cf708.appspot.com",
+	        messagingSenderId: "449603963892"
+	    };
+	    firebase.initializeApp(config);
+	</script>
+	
+	<script>
+        let database = firebase.database();
+        let bestillinger = database.ref("bestillinger");
+        let leger = database.ref("leger");
+		
+		
+        const inpDate = document.getElementById("inpDate");
+        const inpTime = document.getElementById("inpTime");
+        const VelgLege = document.getElementById("VelgLege");
+        const taBeskrivelse = document.getElementById("taBeskrivelse");
+        const skjema = document.getElementById("skjema");
+        const inpNavn = document.getElementById("inpNavn");
+        
+
+        
+        
+        const db = firebase.database();
+        const allebestillinger = db.ref("allebesillinger");
+        
+        
+        
+        function visLeger(legeSnap) {
+            let lege = legeSnap.val();
+            let key = legeSnap.key;
+            
+            VelgLege.innerHTML += `
+                <option value="${lege.fornavn} ${lege.etternavn}">${lege.fornavn} ${lege.etternavn}</option>
+            `;
+            
+            
+        }
+        
+        function lagBestilling(evt) {
+            
+            evt.preventDefault();
+            bestillinger.push({
+	            dato: inpDate.value,
+	            tid: inpTime.value,
+	            lege: VelgLege.value,
+	            beskrivelse: taBeskrivelse.value,
+	            bestillingstid: firebase.database.ServerValue.TIMESTAMP,
+	            navn:inpNavn.value,
+	            navn_store_bokstaver: (inpNavn.value).toUpperCase()
+            });
+            
+            skjema.reset();
+            
+        }
+        
+        leger.on("child_added", visLeger);
+        skjema.onsubmit = lagBestilling;
+        
+	</script>
+
+</body>
+</html>
