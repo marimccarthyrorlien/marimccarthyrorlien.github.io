@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+<script>
+    var linje1 = "A well a bird, bird, bird, the bird is the word";
+    var linje2 = "A well a bird, bird, bird, well the bird is the word";
+	var n = "A well a everybody's heard about the bird" + "<br>" + "B-b-b bird, bird, bird, b-bird's the word";
+	var o = "Surfin´ bird" + "<br>" + "B-b-b aah aah";
+	
+	function linje() {
+		for(var i = 0; i <6; i++){
+		    if (i %2 === 0){
+		        document.write(linje1 + "<br>") ;
+            }
+		        else{
+                    document.write(linje2 + "<br>");
+			    }
+		}
+    }
+    
+    function sang() {
+	    for(var a=0; a < 4; a++ ){
+	        if (a %2 === 0){
+	            document.write(n  + "<br>"  + "<br>");
+	        }  else {
+	            document.write(linje()  + "<br>"  + "<br>");
+	        }
+	    }
+	    document.write(o);
+	    
+    }
+    
+    sang()
+</script>
+</body>
+</html>
