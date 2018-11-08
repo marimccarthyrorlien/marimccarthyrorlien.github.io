@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+	<input type="number" id="inputFelt">
+	<div id="losning"></div>
+	
+	<script>
+		
+		const inputFelt = document.getElementById("inputFelt");
+		const losning = document.getElementById("losning");
+		
+		
+		inputFelt.oninput = function () {
+			if(inputFelt.value > 0){
+			    losning.innerHTML = "større enn null";
+			    //document.write("større enn null")
+			}
+			else if (inputFelt.value == 0){ // = x2 fordi hvis ikke får man feil siden 0 blir sett på som tekst
+                losning.innerHTML = "tallet er null";
+				//document.write("tallet er null")
+			    
+			}
+			else{
+                losning.innerHTML = "tallet er mindre null";
+				//document.write("mindre enn null")
+			}
+			
+			
+        }
+	</script>
+</body>
+</html>

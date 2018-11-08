@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+	<style>
+		#minFirkant{
+			background-color: bisque;
+			width: 200px;
+			height: 200px;
+			transition: 1s;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="range" min="0" max="1024" id="inpBredde">
+	<input type="range" min="0" max="1024" id="inpHøyde">
+	<input type="color"  id="inpFarge">
+	
+	<div id="minFirkant"></div>
+	
+	<script>
+		var inpBredde =document.getElementById("inpBredde");
+		var inpHøyde = document.getElementById("inpHøyde");
+		var minFirkant = document.getElementById("minFirkant");
+		
+		/*inpBredde.onekeyup= function () {
+		  minFirkant.style.width = inpBredde.value + "px";
+        }; */
+		
+		inpBredde.onmousemove= function () {
+		    minFirkant.style.width = inpBredde.value + "px";
+		};
+		
+		inpHøyde.onmousemove= function () {
+            minFirkant.style.height = inpHøyde.value + "px";
+			
+        }
+
+        inpFarge.onchange =function () {
+            document.body.style.backgroundColor = inpFarge.value
+        }
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+	<input type="number" id="hoyde" placeholder="skriv innn høyden">
+	<input type="number" id="bredde" placeholder="skriv inn bredde">
+	<div id="losning"></div>
+	
+	<script>
+		const hoyde = document.getElementById("hoyde");//const er også en variabel.
+		const bredde = document.getElementById("bredde");
+		const losning = document.getElementById("losning");
+		
+		function finnAreal(h,b) {
+		    return h*b;
+			
+        }
+        
+        hoyde.oninput = function () {
+		    losning.innerHTML = finnAreal(hoyde.value,bredde.value);
+        }
+        
+        bredde.oninput = function () {
+		    losning.innerHTML = finnAreal(hoyde.value,bredde.value);
+        }
+	</script>
+</body>
+</html>

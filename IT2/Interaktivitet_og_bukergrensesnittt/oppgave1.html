@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kaffe eller te?</title>
+	<link rel="stylesheet" href="stilark_oppg1.css">
+</head>
+<body>
+ <main>
+	 
+	 <div id="app">
+	 <div id="boks">
+		 <h2>Bestilling</h2>
+		 
+		 <p>hva ønsker du å drikke og spise?</p>
+		
+		 <input type="checkbox" id="kaffe">
+		 <label for="kaffe">kaffe</label>
+		 <br>
+		 <input type="checkbox" id="te">
+		 <label for="te">te</label>
+		 <br>
+		 <input type="checkbox" id="smultring">
+		 <label for="smultring">smultring</label>
+		 <br>
+		 <input type="checkbox" id="kjeks">
+		 <label for="kjeks">kjeks</label>
+		 <br>
+		 <br>
+		 <button id="btnBestill">Fullfør bestilling</button>
+		
+	 </div>
+
+	 
+	 
+		 <p>Du har bestillt:</p>
+		 <div>
+			 <span>Kaffe</span>
+			 <span id="tellerKaffe">0</span>
+		 </div>
+	    <div>
+		    <span>Te</span>
+		    <span id="tellerTe">0</span>
+	    </div>
+	    <div>
+		    <span>Smultring</span>
+		    <span id="tellerSmultring">0</span>
+	    </div>
+	    <div>
+		    <span>kjeks</span>
+		    <span id="tellerKjeks">0</span>
+	    </div>
+	
+	 </div>
+	
+	 
+ </main>
+
+ <script>
+
+     const kaffe = document.getElementById("kaffe");
+     const te = document.getElementById("te");
+     const smultring = document.getElementById("smultring");
+     const kjeks = document.getElementById("kjeks");
+     const btnBestill = document.getElementById("btnBestill");
+     
+     let antallKaffe = 0;
+     let antallTe = 0;
+     let antallSmultring= 0;
+     let antallKjeks = 0;
+     
+     btnBestill.onclick = function () {
+        if (kaffe.checked){
+             antallKaffe +=1;
+        }
+        if(te.checked){
+            antallTe +=1;
+        }
+        if (smultring.checked){
+            antallSmultring +=1;
+        }
+        if (kjeks.checked){
+            antallKjeks +=1;
+        }
+        
+        tellerKaffe.innerHTML = antallKaffe;
+        tellerTe.innerHTML = antallTe;
+        tellerSmultring.innerHTML = antallSmultring;
+        tellerKjeks.innerHTML = antallKjeks;
+     }
+	 
+	 
+	 
+
+
+ </script>
+</body>
+</html>

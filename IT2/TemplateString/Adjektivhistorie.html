@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+	<input id="hull1" type="text">
+	<input id="hull2" type="text">
+	<input id="hull3" type="text">
+	<input id="hull4" type="text">
+	<input id="hull5" type="text">
+	<input id="hull6" type="text">
+	<input id="hull7" type="text">
+	<input id="hull8" type="text">
+	<input id="hull9" type="text">
+	<input id="hull10" type="text">
+	
+	<button id="button">Lag historie</button>
+	
+	<script>
+		
+		var hull1 = document.getElementById("hull1");
+		var hull2 = document.getElementById("hull2");
+		var hull3 = document.getElementById("hull3");
+		var hull4 = document.getElementById("hull4");
+		var hull5 = document.getElementById("hull5");
+		var hull6 = document.getElementById("hull6");
+		var hull7 = document.getElementById("hull7");
+		var hull8 = document.getElementById("hull8");
+		var hull9= document.getElementById("hull9");
+		var hull10 = document.getElementById("hull10");
+		
+		var button =document.getElementById("button");
+	
+		button.onclik=function () {
+		    	var historie = (`En ${hull1.value} vinterdag skulle den
+		    	 ${hull2.value}, IT-klassen på overnattingstur.
+		    	   Alle de  ${hull3.value} elevene hadde med seg langrennsski,
+		    	    soveposer og en ${hull4.value}	sekk med mat og varmt tøy.
+		    	     Alle gledet seg til denne ${hull4.value} turen.
+		    	     Kristine hadde på seg en ${hull6.value} ny lue, og den ${hull7.value}Tormod hadde på seg en ${hull8.value} jakke.
+		    	     Den ${hull9.value} Anne og ${hull10.value}Sabrina hadde nye langrennsski som de hadde fått til jul `) ;
+			
+			document.write(historie);
+        }
+        
+		
+	
+	</script>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Funksjon</title>
+</head>
+<body>
+	<script>
+		function skrivHallo(){
+		    console.log("hallo");
+		}
+		
+		function siHei() {
+		    document.write("Hei Hei!")
+			
+	    }
+	    skrivHallo();
+		siHei();
+		siHei();
+		siHei();
+		
+		function erPartall(tall) {
+			return tall % 2 === 0;
+        }
+        
+        
+        console.log (erPartall(2));
+		console.log(erPartall(3));
+		console.log(erPartall(71));
+		
+		var mittTall = 2;
+		
+		if (erPartall(mittTall)){
+		    console.log("partall")
+		}
+		
+	</script>
+</body>
+</html>

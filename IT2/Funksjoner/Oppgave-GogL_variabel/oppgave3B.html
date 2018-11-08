@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+	
+	<ul id="handleliste">
+		<li>paprika</li>
+		<li>melk</li>
+		<li>brød</li>
+		<li>sjokolade</li>
+	</ul>
+	
+	<input type="text" id="inputHandleliste">
+	
+	<script>
+        const handleliste = document.getElementById("handleliste");
+        const inputHandleliste = document.getElementById("inputHandleliste");
+        
+        handleliste.oninput = function () {
+            LeggTilPunkt (handleliste, inputHandleliste.value);
+            inputHandleliste.value = "";
+	        
+        }
+
+        function LeggTilPunkt(liste, punkt) {
+            handleliste.innerHTML += "<li>" + punkt + "</li>";
+        }
+	
+	//må legge til knapp
+	
+	
+	
+	</script>
+</body>
+</html>

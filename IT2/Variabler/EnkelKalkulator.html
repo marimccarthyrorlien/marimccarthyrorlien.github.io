@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+<input id="inpTall1" type="number" placeholder="Skriv inn ditt tall her">
+<span id="spnResultat1"></span>
+<input id="inpTall2" type="number" placeholder="Skiv inn ditt tall her">
+<span id="spnResultat2"></span>
+<br>
+<button id="btnRegnUt">Regn ut</button>
+
+<script>
+	var inpTall1 = document.getElementById("inpTall1");
+	var inpTall2 = document.getElementById("inpTall2");
+	var spnResultat2 = document.getElementById("spnResultat2");
+	var btnRegnUt = document.getElementById("btnRegnUt");
+	
+	//Console.log(inpTall.value);
+	//spnResultat.innerHTML(inpTall1.value);
+	
+	
+	
+	btnRegnUt.onclick = function () {
+	    spnResultat2.innerHTML = Number(inpTall2.value) + Number(inpTall1.value);
+	    
+	};
+    inpTall1.onchange = function () {
+        spnResultat2.innerHTML = Number(inpTall2.value) + Number(inpTall1.value);
+
+    };
+    
+    //.onechange gir en fuksjon ved å klikke enter, man trenger ikke button. //
+</script>
+</body>
+</html>

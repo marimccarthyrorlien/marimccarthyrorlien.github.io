@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REPTITISJON</title>
+</head>
+<body>
+
+	<h1>Repitisjon kap 2,3, 4.1-4.3</h1>
+	<p> Denne siden inneholder Javascript</p>
+	
+	<script>
+		// her skriver vi javascript-koden vår
+		
+		// verdier og operatorer
+			// verier er feks tallet 2, "hei".
+			// operatorer kan vi se på som komandoer.
+			// Aritmestiske operatorer, som for eksempel +, -, */
+			// Tilordning operatorer, som for eksempel =, +=, -=, /=
+			// Sammenligningsoperatorer, som for eksempel ===, <, >, <==, >==
+		
+		
+		// variabler (3.1)
+		// vi lager variabler med var, let og const
+			var mittTall = 4; // oppretter en variable og tilordner en verdi
+			var mittAndreTall; //oppretter en variable
+			mittAndreTall = 2; //tilordner en verdi til mittAndreTall
+		
+			var tekst1, tekst2 = "hei", tekst3; //oppretter variablene tekst1, test2 og tekst3. Og tilordnet verdien "hei" til tekst2.
+			tekst2 ="Hade"; // oppdaterer verdien til variabelen tekst2.
+		
+		
+		//Datatyper (3.2)
+		
+		//number
+			var mittNumber =3; //Tilordner verdien 3 til mittNumber, og den er et number
+			// 3 + 2 + 1 //dette blir tallet 6, som er et number. (i consolen)
+			var minString = "hei hei"; // "hei hei"
+		
+		//string
+			// "Hei hei"+ 3 // = "hei hei3"
+			// "3" + "2" // = "32", når vi plusser sammen to strings legges de etter hverandre
+			// vi kan bruke Number(taøø som er en string) for å kunne konvertere string til number
+		
+		//Array
+			var minArray = ["pulp fiction", "Letters to Juliet", "Dear John"] //Dette er en array
+			minArray[2]; // henter ut det tredje elementet i min array (begynner å telle på 0).
+			minArray.push("bølgen"); // legger til et element i minArray ved å bruke .push()
+		
+		//Object
+			var mittObjekt = {
+			    navn : "Mari",
+				jobb : "butikk ansatt"
+			};
+			mittObjekt.navn // Henter verdien til egenskapen navn i mitt object.
+			mittObjekt.navn = "Mia" // tilordner ny verdi til egenskpen.
+		
+		//Boolean
+			var detErSant = true; //eller false
+		
+		//Referere til HTML-elementer (2.2 og 3.4)
+			var inpNavn = document.getElementById("inpNavn"); //refererer til HTML-elementer.
+		
+			// Dot notasjon, henter ut attributter til HTML-elementer, og endrer på disse.
+			divResultat.innerHTML = "tekst som skriver ut i HTML-elementet divResultat";
+			divResultat.style.backgroundColor = "blue"; //endrer bakgrunnsfarge på divResultate-element
+			imgBilde.src = "nyttBilde.jpg"; // endrer imgBilde sin src, og legger til et nytt bilde.
+		
+			document.body.style.backgroundColor = "peach" //endrer bakgrunnsfargen på hele nettsiden
+		
+		//Tester (4.1-4.3)
+			if (betingelse1){
+			    //Hvis betingelsen er true, gjennomføres denne koden
+			}
+			else if (betingelse2){
+			    // hvis betingelse1 er usann og betingelse2 er sann, gjennomføres denne koden
+			}
+			else{
+			    //hvis hverken betingelse1 eller betingelse2 er sanne, gjennomføres denne koden.
+			}
+		
+		//Switch
+			switch(utrykk){
+				case "verdi1": //verdien er string//
+				    //hvis utrykk === "verdi1", gjennomføres denne koden
+					break; // hopper ut av hele switch-setningen
+					
+				case verdi2: //verien er number//
+				case verdi3:
+				    //hvis utrykk === "verdi1" ikke stemmer,, og enten verdi2 === utrykk eller verdi 3=== utrykk, gjennomføres denne koden
+					break;
+				default:
+				    //Hvis ingen av de andre verdiene i casene er lik utrykk kjøres denne koden.
+				    
+			}
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+	
+	<style>
+		canvas{
+			border: solid; /* lager en kant rundt lerretet*/
+		}
+	</style>
+	
+</head>
+<body>
+
+	<canvas id="canvas" width="1200" height="800">
+	</canvas>
+	
+	<script>
+		const canvas = document.getElementById("canvas");
+		const ctx = canvas.getContext("2d");
+		
+		ctx.fillStyle = "red";
+		ctx.fillRect(30,20,50,50);
+	</script>
+
+</body>
+</html>

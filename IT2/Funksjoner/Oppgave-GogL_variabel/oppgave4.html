@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+	<input type="Number" id="gjettTall" placeholder="Hva tror du er det hemmelige tallet?">
+	<button id="btn">Gjett</button>
+	
+	<script>
+		 /*
+		var hemmeligTall = Math.floor(Math.random()*100+1);
+		
+		var gjett = Number(prompt("Hvilket tall gjetter du?"));
+		
+		while (gjett !== hemmeligTall ){
+			if (gjett < hemmeligTall ){
+			    document.write("Du har gjettet for lavt. Prøv igjen!")
+			}
+			else if (gjett > hemmeligTall){
+			    document.write("Du har gjettet for høyt. Prøv igjen!")
+			}
+			else (gjett === hemmeligTall){
+			    document.write("Gratulerer, du gjettet det riktige tallet!")
+			}
+		}
+		  */
+		 
+		 var hemmeligTall = Math.floor(Math.random()*100+1);
+		 const gjettTall = document.getElementById("gjettTall");
+		 const btn = document.getElementById("btn");
+		 
+		 console.log(hemmeligTall);
+		 
+		btn.onclick = function() {
+            if (gjettTall.value < hemmeligTall ){
+                document.write("Du har gjettet for lavt. Prøv igjen!")
+            }
+            else if (gjettTall.value > hemmeligTall){
+                document.write("Du har gjettet for høyt. Prøv igjen!")
+            }
+            else {
+                document.write("Gratulerer, du gjettet det riktige tallet!")
+            }
+		
+		}
+	</script>
+
+
+</body>
+</html>

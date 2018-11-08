@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oppgave1</title>
+</head>
+<body>
+	<button id="knapp">Se filmer</button>
+	<input id="inpText" type="text" placeholder="Legg til din favortitt film">
+	
+	<script>
+		
+		var minArray = [" Hjemme Alene", " Ride Along", " Dear John", " The Notebook"];
+		var inpText = document.getElementById("inpText");
+		
+		console.log(minArray[2]);
+
+
+        knapp.onclick = function () {
+            document.write(minArray + "<br>");
+            console.log(minArray);
+            document.write("film nr 3: " + minArray[2]);
+            
+
+        };
+        
+        inpText.onchange = function () {
+            minArray.push(" " + inpText.value);
+        }
+        
+       
+		
+	</script>
+</body>
+</html>

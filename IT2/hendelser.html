@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Firkant som følger musen</title>
+	<style>
+		
+		body{
+			cursor: none; /*fjerner musen*/
+		}
+		#firkant{
+			background-color: peru;
+			height: 50px;
+			width: 50px;
+			margin-left: 40px;
+			margin-top: 50px;
+			border-radius: 50%;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div id="firkant"></div>
+	
+	<script>
+		var firkant = document.getElementById("firkant") ;
+		
+		document.onmousemove = function () {      //hele nettleser vinduet//
+			var x = event.clientX -25;
+			var y = event.clientY -25;
+			console.log("x=" + x);
+			console.log("y=" + y);
+			
+			firkant.style.marginLeft =x + "px";
+			firkant.style.marginTop =y + "px";
+        }
+	</script>
+
+
+</body>
+</html>

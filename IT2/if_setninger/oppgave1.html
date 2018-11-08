@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oppgave 1 og 2</title>
+</head>
+<body>
+
+<script>
+	var verdi = prompt("skriv inn mobilmerke");
+	
+	switch (verdi){
+	    case "Apple":
+	        document.body.style.backgroundColor = "blue";
+	        document.write("apple er et merke med produktene iphpne, mac og apple TV/watch");
+			break;
+		case "Sony":
+		    document.body.style.backgroundColor = "peach";
+		    document.write("Sony er et merke som har telefoner, TV, kamera og høytalere, for å nevne noe")
+			break;
+		default: //kjører hvis ingen andre verdier eller caser stemmer.
+		    document.write("din mobil er ikke lagt inn")
+	}
+</script>
+</body>
+</html>

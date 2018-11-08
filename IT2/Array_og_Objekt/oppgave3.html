@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oppgave 3</title>
+</head>
+<body>
+
+	<button id="minKnapp">Trykk her</button>
+	<img id="mittBilde" src="">
+	
+	<script>
+		var minKnapp = document.getElementById("minKnapp");
+		var mittBilde = document.getElementById("mittBilde");
+		
+		var bilder = ["bilder/superthumb.jpg", "bilder/superthumb-1.jpg", "bilder/superthumb2.jpg"];
+		
+		minKnapp.onclick=function () {
+		mittBilde.src = bilder[Math.floor(Math.random()*3)];
+        }
+
+	</script>
+
+
+</body>
+</html>

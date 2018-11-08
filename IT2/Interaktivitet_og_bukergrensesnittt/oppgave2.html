@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+	<main>
+		<div id="app">
+			
+			<div id="boks">
+				<h3>Antall personer i sal</h3>
+				
+				<div id="divTeller">0</div>
+				
+				<div id="skjema">
+					<button id="btnInn">Sjekk inn</button>
+					<button id="btnUt">Sjekk ut</button>
+					
+				</div>
+				
+			</div>
+			
+			<div id="advarsel1">
+				<h4> </h4>
+			</div>
+			
+			<div id="advarsel2">
+				<h4></h4>
+			</div>
+			
+		</div>
+	</main>
+	
+	<script>
+        const btnInn = document.getElementById("btnInn");
+        const btnUt = document.getElementById("btnUt");
+        const divTeller = document.getElementById("divTeller");
+        
+        //------- kode for å kunne bruke pilene på tastaturet (må også lage 2 funkjsoner "legg til" og "trekk fra" og kalle de opp).
+        window.onkeydown = function (event) {
+            if (event.code === "ArrowUp"){
+                console.log("pil opp");
+            }
+            if (event.code === "ArrowDown"){
+                console.log("pil ned");
+            }
+        };
+        
+        //----------
+
+        let antall = 0;
+        
+        btnInn.onclick = function () {
+	        antall +=1;
+	        divTeller.innerHTML = antall;
+	        
+            if (antall === 60){
+                alert("ADVARSEL: antall personer har nådd maksgrensen!");
+            
+            }
+
+            if (antall === 50){
+               alert("ADVARSEL: antall personer nærmer seg maksgrensen!");
+            }
+        } ;
+        
+        
+        btnUt.onclick= function () {
+            antall -=1;
+            divTeller.innerHTML = antall;
+
+            if (antall === 60){
+                document.write("ADVARSEL: antall personer har nådd maksgrensen!")
+            }
+
+            if (antall > 50){
+                document.write("ADVARSEL: antall personer nærmer seg maksgrense!")
+            }
+        };
+        
+       
+	
+	
+	</script>
+</body>
+</html>
