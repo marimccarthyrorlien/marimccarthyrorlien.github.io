@@ -23,9 +23,20 @@
         const btnRandom = document.getElementById("btnRandom");
         const btnNext = document.getElementById("btnNext");
 
-        var bilder = ["superthumb.jpg", "superthumb.png", "superthumb-1.jpg", "superthumb-2.jpg", "superthumb-3.jpg"];
+        let bilder = ["superthumb.jpg", "superthumb.png", "superthumb-1.jpg", "superthumb-2.jpg", "superthumb-3.jpg"];
+        let tall = 0;
+		
+        btnBack.onclick = function () {
+	       
+        };
         
+        btnRandom.onclick = function () {
+	       tall = math.floor(math.random()*bilder.length);
+        };
         
+        btnNext.onclick = function () {
+        
+        }
 	</script>
 
 

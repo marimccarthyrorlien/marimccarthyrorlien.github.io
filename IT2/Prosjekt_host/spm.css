@@ -1,0 +1,33 @@
+body{
+    background-color: grey;
+}
+
+#app{
+    background-color: #f9ccac;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    border: solid 5px white;
+}
+
+#tekst{
+    background-color: #3a84df;
+    text-align: center;
+    margin-top: 10px;
+}
+#spørsmål{
+    background-color: red;
+
+}
+
+#spørsmål > img{
+    width: 50%;
+    height: 50%;
+
+}
+#nederst{
+    background-color: green;
+    padding: 10px;
+}
