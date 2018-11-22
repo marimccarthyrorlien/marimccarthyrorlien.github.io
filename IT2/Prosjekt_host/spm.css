@@ -1,33 +1,59 @@
 body{
-    background-color: grey;
+    background-color: #f9ccac ;
 }
 
 #app{
-    background-color: #f9ccac;
+    background-color: #fff2df ;
     position: absolute;
+    height: 700px;
+    width: 900px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 3%;
     border: solid 5px white;
 }
 
-#tekst{
-    background-color: #3a84df;
+h1{
     text-align: center;
     margin-top: 10px;
 }
-#spørsmål{
-    background-color: red;
+
+img{
+    display: block;
+    margin: auto;
 
 }
 
-#spørsmål > img{
-    width: 50%;
-    height: 50%;
-
+#alternativer{
+    text-align: center;
 }
-#nederst{
-    background-color: green;
-    padding: 10px;
+.knapp{
+    padding:20px;
+    margin: 10px 10px 10px 10px;
+    width: 340px;
+    height: 50px;
+    background-color: #f9ccac ;
+    border: solid 5px #f9ccac ;
+}
+
+#undertekst{
+    background-color: #fff2df;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#btnNeste{
+    position: absolute;
+    right: 14px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}
+
+#btnFasit{
+    width: 100px;
+    height: 30px;
 }

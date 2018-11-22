@@ -8,27 +8,79 @@
 </head>
 <body>
 
-<main>
-	<div id="app">
-		<div id="tekst">
-			<h1>HVOR ER DETTE?</h1>
-		</div>
-		<div id="boks">
-			<div id="spørsmål">
-				<img src="Rio.jpg">
-				<button id="btn1">....</button>
-				<button id="btn2">....</button>
-				<button id="btn3">....</button>
-				<button id="btn4">....</button>
-				
+<main id="app">
+	
+		<h1>HVOR ER DETTE?</h1>
+		<img id="bilde" src="Rio5.jpg">
+		
+		<div id="alternativer">
+			<div id="altLinje1">
+				<button class="knapp">Jerusalem</button>
+				<button class="knapp">Rio de Janerio</button>
+			</div>
+			<div id="altLinje2">
+				<button class="knapp">Thailand</button>
+				<button class="knapp">Bali</button>
 			</div>
 		</div>
-		<div id="nederst">
+		
+		<div id="undertekst">
 			<button id="btnFasit">Vis fasit</button>
 			<button id="btnNeste">Neste</button>
 		</div>
-	</div>
+	
 </main>
+
+
+<script>
+
+    const knapp = document.getElementsByClassName("knapp");
+    const btnFasit = document.getElementById("btnFasit");
+    const btnNeste = document.getElementById("btnNeste");
+	const bilde    = document.getElementById("bilde");
+    
+	
+    const bildeListe = ["./Rio2.jpg", "Madagaskar2.jpg", "Jotunheimen.jpg", "Tokyo2.jpg", "....", "Køben2.jpg", "Liseberg2.jpg", "India2.jpg", "Antarktis2.jpg", "...."];
+    
+    let spmIndex = 0;
+    
+    
+    let liste = [
+        ["0","1","2","3", "2"],
+	    ["Rio","Fiji","Madagaskar","Nigeria"],
+	    ["Himalaya", "Alpene", "Jotunheimen", "Andesfjeldene"],
+        []];
+
+    const answer1 = liste[0][2];
+    
+	btnNeste.onclick = function (ev) {
+	    spmIndex +=1 ;
+	    bilde.src = bildeListe[spmIndex];
+	    for (let i = 0; i < 4; i++) {
+	        knapp[i].innerText = liste[spmIndex][i];
+	    }
+    } ;
+    
+    /*btnFasit.onclick = function (ev) {
+	    if (userAnswer === answer1){
+	       document.getElementById("...").style.color = "green";
+	    }
+	    else (....) {
+	        document.getElementById("...").style.color = "red";
+	    }
+    }   ;
+    
+    */
+    
+    for (let i=0; i< knapp.length, i++){
+        knapp[i].onklick=function () {
+            userAnswer =  "4";
+            .document.getElementById("4").stylecolor="green";
+	        
+        }
+    }
+
+</script>
 
 
 </body>
