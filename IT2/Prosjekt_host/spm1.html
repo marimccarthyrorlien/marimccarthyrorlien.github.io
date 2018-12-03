@@ -15,12 +15,12 @@
 		
 		<div id="alternativer">
 			<div id="altLinje1">
-				<button class="knapp">Jerusalem</button>
-				<button class="knapp">Rio de Janerio</button>
+				<button class="knapp" onclick="naveredneValg = 0">Jerusalem</button>
+				<button class="knapp" onclick="naveredneValg = 1">Rio de Janerio</button>
 			</div>
 			<div id="altLinje2">
-				<button class="knapp">Thailand</button>
-				<button class="knapp">Bali</button>
+				<button class="knapp" onclick="naveredneValg = 2">Thailand</button>
+				<button class="knapp" onclick="naveredneValg = 3">Bali</button>
 			</div>
 		</div>
 		
@@ -40,45 +40,60 @@
 	const bilde    = document.getElementById("bilde");
     
 	
-    const bildeListe = ["./Rio2.jpg", "Madagaskar2.jpg", "Jotunheimen.jpg", "Tokyo2.jpg", "....", "Køben2.jpg", "Liseberg2.jpg", "India2.jpg", "Antarktis2.jpg", "...."];
+    const bildeListe = ["Rio2.jpg", "Madagaskar2.jpg", "Jotunheimen2.jpg", "Tokyo2.jpg", "DubaiR.jpg", "Køben2.jpg", "Liseberg2.jpg", "India2.jpg", "Antarktis2.jpg", "arizona3.jpg"];
     
     let spmIndex = 0;
     
+    let bSvar = [];
+    let naveredneValg;
+    
     
     let liste = [
-        ["0","1","2","3", "2"],
-	    ["Rio","Fiji","Madagaskar","Nigeria"],
-	    ["Himalaya", "Alpene", "Jotunheimen", "Andesfjeldene"],
-        []];
-
-    const answer1 = liste[0][2];
+        ["0","1","2","3", 1],
+	    ["Rio","Fiji","Madagaskar","Nigeria", 2],
+	    ["Himalaya", "Alpene", "Andesfjeldene", "Jotunheimen", 3],
+        ["Singapore", "Thailand", "Dubai", "Tokyo", 3],
+	    ["Thailand", "Dubai", "Singapore", "Tokyo", 1],
+        ["Stavanger","København", "Stocholm", "Bergen", 1],
+	    ["Disney World", "Universal Studio", "Tusenfryd", "Liseberg", 2],
+        ["India", "Bali", "Egypt", "Marocco",0 ],
+	    ["Arktis", "Antarktis", "Grøndland", "Island", 1],
+	    ["California","Mexico","Texas","Arizona", 3]
+    ];
     
-	btnNeste.onclick = function (ev) {
-	    spmIndex +=1 ;
+    
+	btnNeste.onclick = function () {
+	    spmIndex += 1;
 	    bilde.src = bildeListe[spmIndex];
 	    for (let i = 0; i < 4; i++) {
 	        knapp[i].innerText = liste[spmIndex][i];
-	    }
+	    };
+	    resetBtn();
     } ;
     
-    /*btnFasit.onclick = function (ev) {
-	    if (userAnswer === answer1){
-	       document.getElementById("...").style.color = "green";
-	    }
-	    else (....) {
-	        document.getElementById("...").style.color = "red";
-	    }
-    }   ;
-    
-    */
-    
-    for (let i=0; i< knapp.length, i++){
-        knapp[i].onklick=function () {
-            userAnswer =  "4";
-            .document.getElementById("4").stylecolor="green";
-	        
+	
+    btnFasit.onclick = function () {
+        const riktigKnapp = knapp[liste[spmIndex][4]];
+        if (naveredneValg !== undefined){
+            knapp[naveredneValg].style.borderColor = "red";
+	        knapp[naveredneValg].style.backgroundColor = "red";
         }
+	    if (bSvar[spmIndex] === liste[spmIndex][4]){
+	       riktigKnapp.style.backgroundColor = "green";
+	       riktigKnapp.style.borderColor = "green";
+	    }
+    };
+    
+    function resetBtn() {
+        for (let i=0; i < knapp.length; i++){
+            knapp[i].style.backgroundColor = "#f9ccac";
+            knapp[i].style.borderColor= "#f9ccac";
+        }
+        naveredneValg = undefined;
+	    
     }
+    
+    
 
 </script>
 
