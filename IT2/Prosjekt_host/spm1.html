@@ -49,7 +49,7 @@
     
     
     let liste = [
-        ["0","1","2","3", 1],
+        ["Jerusalem","Rio de Janerio","Thailand","Bali", 1],
 	    ["Rio","Fiji","Madagaskar","Nigeria", 2],
 	    ["Himalaya", "Alpene", "Andesfjeldene", "Jotunheimen", 3],
         ["Singapore", "Thailand", "Dubai", "Tokyo", 3],
@@ -69,19 +69,30 @@
 	        knapp[i].innerText = liste[spmIndex][i];
 	    };
 	    resetBtn();
+	    console.log(spmIndex);
+	    console.log(liste.length);
+
+        if(spmIndex > liste.length - 2){
+            btnNeste.style.display = "none";
+        }
     } ;
     
 	
     btnFasit.onclick = function () {
         const riktigKnapp = knapp[liste[spmIndex][4]];
+        
         if (naveredneValg !== undefined){
             knapp[naveredneValg].style.borderColor = "red";
 	        knapp[naveredneValg].style.backgroundColor = "red";
         }
-	    if (bSvar[spmIndex] === liste[spmIndex][4]){
-	       riktigKnapp.style.backgroundColor = "green";
-	       riktigKnapp.style.borderColor = "green";
-	    }
+        
+	    //if (naveredneValg === liste[spmIndex][4]){
+       riktigKnapp.style.backgroundColor = "green";
+       riktigKnapp.style.borderColor = "green";
+	    //}
+	    
+	    bSvar.push();
+	    
     };
     
     function resetBtn() {
@@ -92,6 +103,8 @@
         naveredneValg = undefined;
 	    
     }
+    
+    
     
     
 
