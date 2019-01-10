@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+	
+	<style>
+		#popup{
+			display: none; /* */
+			width: 200px;
+			background-color: peachpuff;
+			position: absolute; /* position, top og left midtstiller noe*/
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%); /* midten av objektet (ikke hjørnet)*/
+			border: solid 1px black;
+			box-shadow: 10px 10px;
+		}
+		
+		video{
+			width: 90%;
+			display: block;
+			margin: auto;
+			padding: 10px;
+			
+		}
+	</style>
+	
+</head>
+<body>
+
+	<h1>Min nettside</h1>
+	<p>Tekst</p>
+	<button id="minKnapp">Trykk her</button>
+
+	<div id="popup">
+		<video src="eksamen16-fisk.mp4" controls></video>
+		
+	</div>
+	
+	<script>
+		const popup = document.getElementById("popup");
+		const knapp = document.getElementById("minKnapp");
+		
+		knapp.onclick = function () {
+		    popup.style.display = "block";
+        };
+        window.onclick = function (event) {
+            if(event.target === knapp|| event.target === popup || event.target === popup.children[0]){
+                popup.style.display = "block";
+            }
+            else{
+                popup.style.display = "none";
+            }
+		}
+	</script>
+
+</body>
+</html>

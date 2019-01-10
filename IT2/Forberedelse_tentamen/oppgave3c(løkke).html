@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+
+<body>
+
+<div id="treA">3a</div>
+<div id="treB">3b</div>
+<script>
+	var treA = document.getElementById("treA");
+	var treB = document.getElementById("treB");
+	
+	for (var i=0; i <= 10; i++){
+	    treA.innerHTML += "<br>"+i;
+	}
+	
+	for (var a=1; a <= 120; a++ ){
+	    treB.innerHTML += "<p>" + (a*4) + "</p>";
+	}
+</script>
+</body>
+
+</html>

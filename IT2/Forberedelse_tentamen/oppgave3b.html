@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>oppgave 3b</title>
+</head>
+<body>
+	<input type="text" id="inpAlder">
+	<input type="checkbox" id="pensjonist">
+	<label for="pensjonist">Pensjonist</label>
+	<input type="checkbox" id="student">
+	<label for="student"> Student over 18</label>
+	<button id="btn">Lagre</button>
+	
+	<script>
+		var inpAlder = document.getElementById("inpAlder");
+		var pensjonist = document.getElementById("pensjonist");
+		var student = document.getElementById("student");
+		var btn = document.getElementById("btn");
+		
+		
+		btn.onclick = function () {
+		    if (inpAlder.value < 5){
+            document.write("Gratis billett")
+	        }
+	        else if (inpAlder.value <= 18){
+	            document.write("billetten koster 30kr")
+	
+	        }
+	        else if(inpAlder.value >= 18 && student.checked){
+		        document.write("billetten koster " + 70/100*80);
+		    }
+		    else if (pensjonist.checked){
+		        document.write("billetten koster " + 70/100*40);
+		    }
+	        else{
+	            document.write("billetten koster 70kr");
+	        }
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nettside</title>
+	<link rel="stylesheet" href="Nettbank.css">
+	
+</head>
+<body>
+
+<header>
+	<h1>NETTBANKEN</h1>
+</header>
+
+<main>
+	<div id="bevegelse">
+		<h2>Inn/ut</h2>
+		<input type="number" id="inn" placeholder="Beløp">
+		<button id="btnInn">Sett inn</button>
+		<br>
+		<input type="number" id="ut" placeholder="Beløp">
+		<button id="btnUt">Uttak</button>
+	</div>
+	
+	<div id="saldo">
+		<h2>Disp beløp</h2>
+		<br>
+		<h1 id="dispBelop"></h1> <h2>Kr</h2>
+	</div>
+	
+	<div id="overføre">
+		<h2>Overføre</h2>
+		<input type="number" id="konto" placeholder="Kontonummer">
+		<br>
+		<input type="number" id="sum" placeholder="Beløp">
+		<br>
+		<button id="btnOverfor">Overfør</button>
+	</div>
+	
+	<div id="oversikt" class="row1">
+		<h2>Kontobevegelse</h2>
+		<div id="boks">
+		
+		</div>
+	</div>
+
+</main>
+
+<footer>
+	<h3>kontakt oss:</h3>
+	<p>tlf: 57899324</p>
+	<p>epost: nettbanken@gmail.com</p>
+	<br>
+	<p>åpningstid: 10-15</p>
+	<br>
+</footer>
+<script src="Nettbank.js"></script>
+</body>
+</html>
