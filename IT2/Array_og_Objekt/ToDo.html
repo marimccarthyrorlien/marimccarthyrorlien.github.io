@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+	<form action="">
+		<label for="navn">Navn:</label>
+		<input id="navn" type="text">
+		<label for="huske">Må huskes:</label>
+		<input id="huske" type="text">
+		<button id="knapp" type="submit">Send in</button>
+	</form>
+
+	<ul id="huskeListe">
+	
+	</ul>
+	
+	<script>
+		let inputFelt = document.querySelectorAll("input"); //fordi vi ikke har id, og er flere av samme element.
+        let knapp = document.querySelector("#knapp"); //kan brukes istedenfor getElementById. Nytt etter 2016. dersom det er class så bruker man (".knapp")
+		let huskeListe = document.querySelector("#huskeListe");
+		
+		let todos = [];
+		
+		function LeggTilTodo() {
+		    for (let input of inputFelt){
+		    todos.push(input.value);
+		    }
+			huskeListe.innerHTML = todos;
+        }
+		
+		
+		knapp.onclick = leggTilTodo; //istedenfor å skrive = function ().
+		
+	</script>
+</body>
+</html>

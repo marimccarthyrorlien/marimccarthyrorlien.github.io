@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+	<ul id="treTyper">
+	</ul>
+	
+	<script>
+		let treTyper = document.querySelector("#treTyper");
+		let tre = ["lønn", "hassel", "bjørk", "eik", "blodlønn", "furu", "gran"];
+		
+		tre.splice(3,1);
+		tre.splice(2,1, "hengebjørk");
+		tre.splice(5,2);
+        tre.push("fjellbjørk", "gran");
+        tre.sort(); //sorterer alfabetisk
+		
+		
+		for(tre of tre){
+		    treTyper.innerHTML += "<li>" + tre + "</li>";
+        }
+	</script>
+</body>
+</html>

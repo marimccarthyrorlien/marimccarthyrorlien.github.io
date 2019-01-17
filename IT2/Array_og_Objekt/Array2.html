@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+	<ul id="filmListe">
+	
+	</ul>
+
+	<script>
+		let filmListe = document.getElementById("filmListe");
+		let filmer = ["Ben Hur", "Shawshank Redemption", "Inglo"];
+		
+	     //Metoder til Array s.201
+		
+		filmer.push("Django Unchained"); // legger til en ting helt til slutt i arrayen
+		filmer.unshift("Oslo 11 august"); // legger til ting forran i Arrayen
+		filmer.pop(); //tar bort det siste elementet i arrayen
+		filmer.shift(); //tar bort det første elementet i arrayen
+		filmer.splice(1,2); // fjerner ett eller flere element i arrayen. denne fjerner elementet med index 1, og 2 element (de to etter hevrandre). skal man fjerne noe som ikke ligger ved siden av hevrandre på man lage to film.splice
+		filmer.splice(1,1,"The shape of water"); // bytter ut Shawshank Redemption, og setter inn The shape of water.
+		
+		//filmer[1] = "King Kong";
+		
+		for(let film of filmer){      //finest! Bruk denne. Ny i 2016.
+		    console.log(film);
+		    filmListe.innerHTML += "<li>" + filmer + "</li>";      //må ha += for at alle filmene skal komme med.
+		}
+		
+		/*
+		for(let i = 0; i < filmer.length; i++){
+		    console.log(filmer[i]);
+		}
+		 */
+		
+	</script>
+</body>
+</html>

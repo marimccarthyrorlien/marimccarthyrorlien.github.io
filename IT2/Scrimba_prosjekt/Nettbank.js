@@ -10,7 +10,7 @@ var dispBelop = document.getElementById("dispBelop");
 var boks =document.getElementById("boks");
 
 var endreB = 10000;
-dispBelop.innerHTML += endreB;
+dispBelop.innerHTML = endreB;
 
 
 btnInn.onclick = function () {

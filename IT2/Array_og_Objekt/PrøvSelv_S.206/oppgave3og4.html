@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+	<style>
+		img{
+			max-width: 50%;
+			max-height: 50%;
+			text-align: center;
+		};
+		
+	</style>
+</head>
+	<div id="slideshow">
+		<img id="imgSlide" src="" alt="">
+		<br>
+		<button id="btnLast">Forrige</button>
+		<button id="btnNext">Neste</button>
+	</div>
+<body>
+	<script>
+		let btnLast = document.getElementById("btnLast");
+		let btnNext = document.getElementById("btnNext");
+		let feriebilder = ["../bilder/ferie1.jpg","../bilder/ferie4.jpg", "../bilder/ferie3.jpeg", "../bilder/ferie2.jpg",  "../bilder/ferie5.jpg"];
+		let slideshow = document.querySelector("#slideshow");
+		let imgSlide = document.getElementById("imgSlide");
+		
+		
+		let bildeTeller = 0;
+		
+		imgSlide.src = feriebilder[bildeTeller];
+		btnLast.onclick = forrigeBilde;
+		btnNext.onclick = nesteBilde;
+		
+		feriebilder.sort();
+		
+		for(let bilde of feriebilder){
+		    console.log(bilde);
+		}
+		
+		function forrigeBilde (){
+		    bildeTeller = bildeTeller -1;
+			if(bildeTeller <0){
+			    bildeTeller = feriebilder.length -1;
+			}
+			  imgSlide.src = feriebilder[bildeTeller];
+		}
+		
+		function nesteBilde() {
+		    bildeTeller = bildeTeller +1;
+		    if(bildeTeller > feriebilder.length-1){
+		        bildeTeller = 0;
+		    }
+			imgSlide.src = feriebilder[bildeTeller];
+        }
+		
+		
+	
+	
+	
+	</script>
+</body>
+</html>

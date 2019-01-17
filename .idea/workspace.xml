@@ -2,6 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/IT2/Array_og_Objekt/if-setninger.html" line="13" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/IT2/Array_og_Objekt/Array2.html" line="15" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5de9cd8-a9f6-44ac-928b-1051c1edfd31" name="Default" comment="" />
@@ -17,31 +18,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Nettbank.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.html">
+      <file leaf-file-name="Array2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/Array2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="379">
+              <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nettbank.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.css">
+      <file leaf-file-name="oppgave1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nettbank.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.js">
+      <file leaf-file-name="oppgave2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="315">
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oppgave3og4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave3og4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oppgave6.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToDo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/ToDo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -52,9 +83,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,14 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IT2/Løkker/while_løkke.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/PrøvSelv_s90/oppgave1.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/PrøvSelv_s90/oppgave2.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/PrøvSelv_s90/oppgave3.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/PrøvSelv_s90/oppgave4.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/for_løkke.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/PrøvSelv_s94/oppgave1.html" />
-        <option value="$PROJECT_DIR$/IT2/Løkker/index.html" />
         <option value="$PROJECT_DIR$/IT2/Løkker/For-løkke_Og_Canvas.html" />
         <option value="$PROJECT_DIR$/IT2/Funkjoner/funskjoner.html" />
         <option value="$PROJECT_DIR$/IT2/Funksjoner/funksjoner.html" />
@@ -119,7 +142,15 @@
         <option value="$PROJECT_DIR$/IT2/Scrimba_prosjekt/index.css" />
         <option value="$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.html" />
         <option value="$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.css" />
+        <option value="$PROJECT_DIR$/ToDo.html" />
         <option value="$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.js" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/Array2.html" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave1.html" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave2.html" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave3.html" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave5.html" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/ToDo.html" />
+        <option value="$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave6.html" />
       </list>
     </option>
   </component>
@@ -130,9 +161,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="38" />
-    <option name="width" value="1381" />
+    <option name="x" value="135" />
+    <option name="y" value="23" />
+    <option name="width" value="1260" />
     <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -170,7 +201,14 @@
               <item name="marimccarthyrorlien.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="marimccarthyrorlien.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="IT2" type="462c0819:PsiDirectoryNode" />
-              <item name="Scrimba_prosjekt" type="462c0819:PsiDirectoryNode" />
+              <item name="Array_og_Objekt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marimccarthyrorlien.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="marimccarthyrorlien.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="IT2" type="462c0819:PsiDirectoryNode" />
+              <item name="Array_og_Objekt" type="462c0819:PsiDirectoryNode" />
+              <item name="PrøvSelv_S.206" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,6 +228,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IT2/Array_og_Objekt" />
       <recent name="$PROJECT_DIR$/IT2/Interaktivitet_og_bukergrensesnittt" />
       <recent name="$PROJECT_DIR$/IT2/Funksjoner/Oppgaver" />
       <recent name="$PROJECT_DIR$/IT2/Array_og_Objekt/bilder" />
@@ -244,7 +283,8 @@
       <workItem from="1546513997343" duration="1195000" />
       <workItem from="1547106552147" duration="14381000" />
       <workItem from="1547208294649" duration="1999000" />
-      <workItem from="1547405969342" duration="4292000" />
+      <workItem from="1547405969342" duration="4886000" />
+      <workItem from="1547710963169" duration="12212000" />
     </task>
     <task id="LOCAL-00001" summary="ny mappe">
       <created>1535024207537</created>
@@ -278,22 +318,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169282000" />
+    <option name="totallyTimeSpent" value="182088000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="38" width="1381" height="797" extended-state="0" />
+    <frame x="135" y="23" width="1260" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0154411765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21226797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30524343" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30514705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -320,49 +360,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IT2/Funksjoner/f(x).html" />
-    <entry file="file://$PROJECT_DIR$/IT2/Løkker/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Funksjoner/Oppgave-GogL_variabel/oppgave2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="66" lean-forward="false" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Funksjoner/Oppgave-GogL_variabel/oppgave1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Funksjoner/Oppgave-GogL_variabel/oppgave3B.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Funksjoner/Oppgave-GogL_variabel/oppgave3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/Array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/if-setninger.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-253">
@@ -623,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,16 +640,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="308">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Scrimba_prosjekt/Nettbank.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="171">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/Array2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave3og4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/ToDo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Array_og_Objekt/PrøvSelv_S.206/oppgave6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+</head>
+<body>
+
+	<h1>jeg fikk ikke til denne oppgaven forid jeg så på ToDo oppgaven vi gjorde i timen. Noe der også noe som ikke stemmer.</h1>
+
+	<br>
+	<input id="film" type="text" placeholder="skriv en film her">
+	<button>Send inn</button>
+	<br>
+	<br>
+	<label for="terninkast">Terningkast</label>
+	<select name="" id="terningkast"></select>
+	
+	<div id="overiskt">
+		<h3>Filmer og terningkast</h3>
+	</div>
+	
+	
+	<script>
+		let film = document.getElementById("film");
+		let filmer = [];
+		let terningkast = document.getElementById("terningkast");
+		let oversikt = document.getElementById("oversikt");
+		
+		function leggTilFilm () {
+			for (let input of inputFelt){
+                filmer.push(input.value);
+			}
+			oversikt.innerHTML = filmer;
+			console.log(filmer);
+		}
+		
+		
+	</script>
+
+
+</body>
+
+</html>
