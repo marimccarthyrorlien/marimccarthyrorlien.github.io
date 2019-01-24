@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+	<link rel="stylesheet" href="hjelpApp.css">
+</head>
+<body>
+
+<main>
+
+	<h1>HJEEEEELP!</h1>
+		<div id="elev">
+			<input type="text" id="navn" placeholder="Navn" required>
+			<br>
+			<textarea name="" id="beskjed" placeholder="Hva trenger du hjelp med?" required></textarea>
+			<br>
+			<select name="" id="prioritering" required>
+				<option disabled selected >Velg prioritering</option>
+				<option value="">Lav</option>
+				<option value="">Middels</option>
+				<option value="">Høy</option>
+			</select>
+			<br>
+			<button id="btnSend">Send inn</button>
+		</div>
+	
+	
+	<div id="lerer"></div>
+
+</main>
+	
+	<script>
+		var elev = document.getElementById("elev");
+		var navn = document.getElementById("navn");
+		var beskjed = document.getElementById("beskjed");
+		var prioritering = document.getElementById("prioritering");
+		var lerer = document.getElementById("lerer");
+		var btnSend = document.getElementById("btnSend");
+		
+		btnSend.onclick = function (ev) {
+		    lerer.innerHTML += inpNavn.value
+		}
+	</script>
+	
+	
+
+</body>
+</html>

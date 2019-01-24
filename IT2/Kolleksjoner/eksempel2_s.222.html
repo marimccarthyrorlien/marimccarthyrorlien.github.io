@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$Title$</title>
+	
+	<style>
+		body{
+			height: 100%;
+			background-color: black;
+		}
+		
+		.stjerne{
+			position: absolute;
+			background-color: yellow;
+			border-radius: 50%;
+			transition: 1s; /*animasjon*/
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		/*for (var i=0; i<2000; i++){
+		    var stjerne = document.createElement("div"); //oppretter et div-element
+			stjerne.className = "stjerne"; //setter class "stjerne" på elementet
+			stjerne.style.left = Math.random()*innerWidth + "px"; //tilfeldig posisjon
+			stjerne.style.top = Math.random()*innerHeight+ "px";
+			stjerne.style.width = Math.random()*3+"px"; //tildeldig bredde mellom 0 og 3
+			stjerne.style.height = stjerne.style.width; //setter bredden lik høyden så div-elementet blir sikrelformet
+			document.body.appendChild(stjerne); //Legger div-elementet i body på nettet.
+			*/
+		
+        for (var i=0; i<2000; i++){
+            var stjerne = document.createElement("div"); //oppretter et div-element
+            stjerne.className = "stjerne"; //setter class "stjerne" på elementet
+            document.body.appendChild(stjerne); //Legger div-elementet i body på nettet.
+		}
+		
+		var stjerner = document.querySelectorAll(".stjerne");
+		function scramble() {
+		    for (var stjerne of stjerner){
+                stjerne.style.width = Math.random()*3+"px";  //tildeldig bredde mellom 0 og 3
+                stjerne.style.height = stjerne.style.width; //setter bredden lik høyden så div-elementet blir sikrelformet
+                stjerne.style.left = Math.random()*innerWidth + "px"; //tilfeldig posisjon
+                stjerne.style.top = Math.random()*innerHeight+ "px";
+		    }
+			
+        }
+        
+        scramble(); // første gang, skjer med en gang
+		setInterval(scramble,1500); //setter intervaller på 1,5 sekunder etter første ganen.
+	</script>
+</body>
+</html>

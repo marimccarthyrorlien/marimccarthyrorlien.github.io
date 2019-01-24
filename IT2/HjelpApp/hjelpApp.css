@@ -1,0 +1,54 @@
+
+body{
+
+    background-color: lavender;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#navn{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#beskjed{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+
+}
+
+#prioritering{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border: 1px solid gray;
+
+}
+
+#btnSend{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+
+}
+
+#lerer{
+    border: 5px solid black;
+    width: 600px;
+    height: 250px;
+
+
+}
+
+

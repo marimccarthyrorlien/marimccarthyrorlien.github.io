@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nodelist</title>
+</head>
+<body>
+	<div>Hei</div>
+	<div class="oransj">på</div>
+	<div class="oransj">deg</div>
+
+	<script>
+		let divs = document.querySelectorAll(".oransj");
+		
+		
+		for (let heisann of divs){
+		    heisann.style.backgroundColor = "DarkOrange";
+		    heisann.style.marginLeft = "5px";
+		    heisann.style.float = "left";
+		    heisann.style.textAlign = "center";
+		    heisann.style.width = "200px";
+		    heisann.style.height = "120px";
+		}
+	</script>
+</body>
+</html>
