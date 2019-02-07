@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+</head>
+<body>
+	<div id="minFirkant">
+	</div>
+	
+	<script>
+		let minFirkant = document.querySelector("#minFirkant");
+		
+		minFirkant.style.position = "absolute";
+		minFirkant.style.height = "50px";
+		minFirkant.style.width = "50px";
+		minFirkant.style.backgroundColor = "peachpuff";
+		
+		
+		minFirkant.style.left = "50px";
+		minFirkant.style.top = "50px";
+		
+		window. onclick = function (event) {
+		    console.log(event.x);
+		    /*sentrere i midten av firkanten*/
+		    minFirkant.style.left = (event.x-25) + "px";
+		    minFirkant.style.top = (event.y-25) + "px";
+		}
+	</script>
+</body>
+</html>

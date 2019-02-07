@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>9.2 - eksempel</title>
+	<style>
+		.container{
+			position: relative;
+			width: 400px;
+			height: 280px;
+			background-color: palegoldenrod;
+			border: 14px solid white;
+			box-shadow: 0 0 1px DarkGray;
+			overflow: hidden;
+		}
+		.container > img{
+			position: absolute;
+			transform: scale(1);
+			transition: 0.5s 0.5s;
+		}
+		
+		.container > article{
+			position: absolute;
+			width: 80%;
+			height: 80%;
+			padding: 10%;
+			background-color: peachpuff;
+			color: whitesmoke;
+			text-align: center;
+			transform: scale(0);
+			transition: 0.5s 0.5s;
+		}
+		
+		.container:hover > img{
+			transform: scale(1);
+			transition: 0.5s 0.5s;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<img src="loeve.jpg">
+	<article class="infoTekst"> <!-- teksten begynner -->
+		<h1>Løven</h1>
+		<hr> <!-- taggen hr legger inn en strek -->
+		<p>Løven er et sosialt kattedyr som tilhører slekten brølekatter (Panthera)</p>
+		<a href="#">Les mer</a> <!-- taggen legger inn en lenke -->
+	</article> <!-- teksten slutter -->
+</div>
+
+</body>
+</html>

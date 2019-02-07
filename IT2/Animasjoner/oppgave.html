@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+</head>
+<body>
+
+<h1 id="tekst">Hei</h1>
+
+<script>
+	let tekst = document.querySelector("#tekst");
+	tekst.style.width = "300px";
+	tekst.style.margin = "auto";
+	
+	tekst.onmouseover = function(){
+	    tekst.style.transform = "scale(3)";
+	};
+	
+	tekst.onmouseleave = function(){
+	    tekst.style.transform = "scale(1)";
+	};
+</script>
+
+</body>
+</html>

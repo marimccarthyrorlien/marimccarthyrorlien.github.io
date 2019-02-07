@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style>
+		body{
+			transition: 2s;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="text" id="inpFarge">
+	<div id="firkant"></div>
+	
+	<script>
+		let inpFarge = document.querySelector("#inpFarge");
+		let firkant = document.querySelector("#firkant");
+		inpFarge.oninput = function () {
+		    firkant.style.backgroundColor = inpFarge.value;
+			
+        }
+	</script>
+
+
+</body>
+</html>

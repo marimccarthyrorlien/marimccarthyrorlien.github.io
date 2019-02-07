@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style>
+		img{
+			width: 100px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+
+<img id="bill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/1200px-Bill_Clinton.jpg" alt="">
+
+<script>
+	const bill = document.querySelector("#bill");
+	
+	let animasjonsStil = [
+		{
+		    left: "0px",
+			top: "0px"
+		},
+		{
+		   left: "300px",
+			top: "500px"
+		}
+	];
+	
+	// bill.animate([{left:"0px"},{left:"300px"}],1000); //starter på 0, stopper på 300, tar 1000 --> "1 sekund".
+	
+	let animasjonsEgenskaper = {
+	    duration: 1000,
+		easing: "ease-in-out",
+		direction: "alternate",
+		iterations: Infinity,
+		fill: "forwards"
+		
+		
+	};
+	
+	bill.animate(animasjonsStil,animasjonsEgenskaper);
+	
+	
+</script>
+
+</body>
+</html>

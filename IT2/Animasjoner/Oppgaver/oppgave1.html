@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style>
+		img{
+			width: 100px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+
+<h1 id="overskrift">Overskrift</h1>
+
+<br>
+<br>
+
+<img id="dog" src="https://lh4.googleusercontent.com/-GpZmNUe-gBA/URPPOxWN5tI/AAAAAAAAABY/pjzSmQGDxjg/s640/blogger-image-1154401525.jpg" alt="">
+<button id="btnPause">Pause</button>
+<button id="btnStart">start</button>
+<button id="btnReverser">Reverser</button>
+
+<br>
+
+<input type="range" id="slider" min="0.1" max="2" value="1">
+
+<script>
+	const overskrift = document.querySelector("#overskrift");
+	const dog = document.querySelector("#dog");
+	const btnPause = document.querySelector("#btnPause");
+	const slider =document.querySelector("#slider");
+	
+	
+	
+	//----------- overskrift -----------//
+	
+	let animasjonsStil =[
+	    {opacity: 0},
+		{opacity: 1}
+	];
+	
+	let animajsonsEgenskaper = {
+            duration: 3000
+
+        };
+	
+	//------------ bildet -------------//
+	
+	let dogStil=[
+	    {
+	        left: "100px",
+		    top: "20px",
+		    transform: "rotate(0deg)"
+		},
+		{
+		   left: "800px",
+			top: "20px",
+			transform: "rotate(1440deg)"
+		}
+	];
+	
+	let dogEgenskaper = {
+	    duration: 8000
+
+	} ;
+	
+	
+	overskrift.animate(animasjonsStil,animajsonsEgenskaper);
+	let anidog = dog.animate(dogStil,dogEgenskaper);
+	
+	btnPause.onclick = function () {
+	    anidog.pause();
+    };
+    
+    btnStart.onclick = function () {
+        anidog.play();
+	    
+    };
+    
+    btnReverser.onclick = function () {
+        anidog.reverse();
+    };
+	
+	 slider.onchange = function () {
+	     anidog.playbackRate = slider.value
+		 
+     }
+	
+</script>
+
+
+</body>
+</html>
