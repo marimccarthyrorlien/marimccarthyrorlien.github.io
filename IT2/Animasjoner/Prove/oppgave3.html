@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style media="screen">
+		
+		body {
+			background-image: url("vedlegg/earth.png");
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+		}
+		
+		#ramme{
+			position: relative;
+			overflow: hidden;
+		}
+		
+		@keyframes romskipAnimasjon {
+			0%{
+				bottom: 40%;
+				left: 50%;
+				transform: rotate(0deg);
+			}
+			
+			3%{
+				bottom: 45%;
+				left: 50%;
+				transform: rotate(0deg);
+			}
+			
+			5%{
+				bottom: 50%;
+				left: 60%;
+				transform: rotate(60deg);
+			}
+			
+			50% {
+				bottom: 30%;
+				left: 10%;
+				transform: rotate(0deg);
+			}
+			
+			70‰ {
+			   bottom: 30%;
+			   left: 10%;
+			   transform: rotate(0deg);
+				  background-image: url("vedlegg/moon.png");
+			  }
+			  
+			  100%{
+				bottom: 40%;
+				left: 50%;
+				transform: rotate(0deg);
+				}
+		}
+		
+		#romskip{
+			position: absolute;
+			animation: romskipAnimasjon 15s ;
+		}
+		
+		
+		
+			
+		
+	</style>
+</head>
+<body>
+<div id="ramme">
+	<div id="slide1">
+		<img id="romskip" src="vedlegg/spaceX.png" alt="">
+		<button id="btnTakeoff">Start Take-off</button>
+	</div>
+	
+</div>
+
+
+	<script>
+		const btnTakeoff = document.querySelector("#btnTakeoff");
+		let romskipAnimasjon =document.querySelector("#romskipAnimasjon");
+		
+		
+		btnTakeoff.onclick = function () {
+		    romskipAnimasjon.play();
+		   
+		    
+			
+        }
+	</script>
+</body>
+</html>

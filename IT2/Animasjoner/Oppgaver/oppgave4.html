@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>App, ikke animasjon</title>
+</head>
+<body>
+
+<h1>HVOR MYE PENGER SPARER DU?</h1>
+<div>
+	<h3>Bykjøring</h3>
+	<input id="km1" type="number" placeholder="Antall kilometer" required>
+	<input id="pris1" type="number" placeholder="Prisen på drivstoffet" required>
+	<button id="btnRegnUt">Regn ut</button>
+</div>
+<div>
+	<h3>Blandet kjøring</h3>
+	<input id="km2" type="number" placeholder="Antall kilometer" required>
+	<input id="pris2" type="number" placeholder="Prisen på drivstoffet" required>
+	<button id="btnRegnUt2"> Regn ut </button>
+</div>
+
+
+<script>
+	const km1 = document.querySelector("#km1");
+	const km2 = document.querySelector("#km2");
+    const pris1 = document.getElementById("pris1");
+    const pris2 = document.getElementById("pris2");
+    const btnRegnUt = document.getElementById("btnRegnUt");
+    const btnRegnUt2 = document.getElementById("btnRegnU2t");
+    
+    btnRegnUt.onclick = function (ev) {
+        let normalforbruk = Number(km1.value)*Number(pris1.value)*0.65;
+	    let besparelse = normalforbruk;
+    }
+	
+
+
+</script>
+
+</body>
+</html>

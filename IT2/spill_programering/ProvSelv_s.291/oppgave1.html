@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style>
+		#firkant{
+			height: 200px;
+			width: 200px;
+			background-color: peru;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="divPoeng">poeng: 0</div>
+	<div id="firkant"></div>
+	
+	<script>
+		const divPoeng = document.querySelector("#divPoeng");
+		const firkant = document.querySelector("#firkant");
+		
+		let poeng = 0;
+		
+		firkant.onclick = gameLoop;
+		
+		//set up
+		merPoeng();
+		
+		function gameLoop() {
+		    merPoeng();
+		    flyttFirkant();
+			
+        }
+		
+		function merPoeng() {
+		    poeng += 10;
+		    divPoeng.innerHTML = `Poeng: ${poeng}`;
+        }
+        
+        function flyttFirkant() {
+	       firkant.style.left = Math.random()*window.innerWidth + "px";
+	       firkant.style.top = Math.random()*window.innerHeight+ "px";
+        }
+	</script>
+
+</body>
+</html>

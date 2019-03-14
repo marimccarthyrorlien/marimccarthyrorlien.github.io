@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flappy Bird</title>
+</head>
+<body>
+
+	<h3>FLAPPY BIRD</h3>
+
+	<canvas id="canvas" width="288" height="512"></canvas>
+
+
+	<script>
+		var cvs = document.querySelector("#canvas");
+		var ctx = cvs.getContext("2d");
+		var imageName = new Image();
+		
+		
+		var bird = new Image() ;
+		var bg = new Image() ;
+		var fg = new Image() ;
+		var pipeNorth = new Image() ;
+		var pipeSouth = new Image() ;
+		
+		bird.src = "bird.jpg";
+		bg.src = "bakgrunn.jpg";
+		fg.src = "...";
+		pipeNorth.src = "...";
+		pipeSouth = "pipeS.jpg";
+		
+		ctx.drawImage(imageName, X, Y, width, height);
+		
+		var bX = 10;
+		var bY = 150;
+		
+		var gravity =1;
+		
+		// on key down
+		document.addEventListener("keydown",moveUp);
+		function moveUp(){
+		bY -= 20;
+		};
+		
+		function draw(){
+		    ctx.drawImage(bg, 0, 0);
+		    ctx.drawImage(pipeNorth, 100, 0);
+		    ctx.drawImage(pipeSouth, 100, 0 + constant);
+		    ctx.drawImage(fg, 0, cvs.height -fg.height);
+		    ctx.drawImage(bird,10,150);
+		    
+		    bY += gravity;
+		    requestAnimationFrame(draw);
+		}
+		
+		
+		// pipe cordinates
+		var pipe = [];
+		
+		pipe[0] = {
+		    x: cvs.width;
+			y: 0
+		}
+		
+		function draw() {
+		    
+		    ctx.drawImage(bg,0,0);
+		    
+			for(var i=0; i < pipe.length; i++){
+			ctx.drawImage(pipeNorth, pipe[i].x,pipe[i].y);
+			ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + constant);
+			pipe[i].x--;
+			if (pipe[i].x == cvs.wi - 188){
+			}
+                // code
+            }
+			
+        
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style>
+		#kjeks{
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div id="divPoeng">Poeng: 0</div>
+	<img id="kjeks" src="cookie_PNG.png">
+	
+	<script>
+		// Referanser til HTML-elementer
+		const divPoeng = document.querySelector("#divPoeng");
+		const kjeks = document.querySelector("#kjeks");
+		
+		// Global variabel som teller poeng
+		let poeng = 0;
+		
+		// setup
+		merPoeng(); //funksjonen merPoeng starter i det siden lastes
+		
+		// Hendelselyttere
+		kjeks.onclick = merPoeng; // vil ikke funke med parentes på slutten her forid vi kaller opp funkjsonen
+		window.onkeydown = merPoeng;
+		
+		// Funksjonsdefinisjoner
+		function merPoeng(){
+		    poeng += 1; //Kan også skrive: poeng = poeng + 1
+			divPoeng.innerHTML= `Poeng: ${poeng}`; //samme som: divPoeng.innerHTML = "Poeng:" + poeng;
+			requestAnimationFrame(merPoeng);
+			
+		}
+	</script>
+</body>
+</html>

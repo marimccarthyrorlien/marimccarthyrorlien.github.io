@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<style>
+		
+		.firkant{
+			margin-left: 50px;
+			width: 70px;
+			height: 70px;
+			text-align: center;
+			background-color: pink;
+			transition: 3s;
+		}
+		
+		#f1:hover{
+			transform-origin: left bottom;
+			transform: rotate(90deg);
+			
+		}
+		
+		#f2:hover{
+			transform-origin: center bottom;
+			transform: rotate(60deg);
+			
+		}
+		
+		#f3:hover{
+			transform: scale(2);
+			
+		}
+		
+		#f4:hover{
+			transform: translateX(70px);
+			
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+
+<div class="firkant" id="f1">vipp 90 grader</div>
+<br>
+<div class="firkant" id="f2">roter 60 grader</div>
+<br>
+<div class="firkant" id="f3">dobbel så stor</div>
+<br>
+<div class="firkant" id="f4">flytt til høyre</div>
+
+<script>
+	const f1 = document.querySelector("#f1");
+	const f2 = document.querySelector("#f2");
+	const f3 = document.querySelector("#f3");
+	const f4 = document.querySelector("#f4");
+	
+
+</script>
+</body>
+</html>

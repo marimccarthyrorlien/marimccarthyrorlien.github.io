@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FLAPPY BIRD</title>
+	<style>
+		#spill{
+			position: relative;
+			background-image: url("bakgrunn.jpg") ;
+			width: 288px;
+			height: 384px;
+		}
+		
+		#bird{
+			position: absolute;
+			background-image: url("bird.jpg");
+			width: 34px;
+			height: 24px;
+			left: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<canvas id="spill" width="600px" height="400px"></canvas>
+
+	<script>
+		
+		//Referanser til HTML
+        const spillCanvas = document.querySelector("#spill");
+        const bird = document.querySelector("#bird");
+        const fallBakke = 360;
+        var birdY = 100;
+		var birdFlyr = true;
+        var gravity = 0.1;
+        var fallFart = 1;
+        var bgpos = 0;
+        var bgfart = -1;
+        
+        //const ctx = spillCanvas.getContext("2d");
+		
+		
+		/*
+		var stolper = {
+		    farge: "grønn",
+		}
+		*/
+		
+		function fly() {
+            fallFart += gravity;
+            birdY += fallFart;
+            bird.style.top = birdY + "px";
+            if (birdY > fallBakke) {
+                birdFlyr = false;
+            }
+        }
+        
+        function flyttBakgrunn() {
+		    bgpos += bgfart;
+		    spill.style.backgroundPosition = bgpos + "px 0px"
+	       
+        }
+        
+        function gameLoop() {
+	        flyttBakgrunn();
+	        fly();
+	        if(birdFlyr){
+	            requestAnimationFrame(gameLoop);
+	        }
+        }
+
+
+        //Set up
+        gameLoop();
+		
+		function flaks() {
+		    fallBakke = -4;
+			
+        }
+        
+        spill.onclick = flaks;
+		    
+		    
+		    
+		    
+		    
+		/*
+		//Funksjonsdefinisjoner
+		function gameLoop(){
+		    tegnBakgrunn();
+		    tegnStolper();
+		    tegnFugl();
+		    sjekkKollisjon();
+		    if(levende){
+		        requestAnimationFrame();
+		    }
+		}
+		*/
+	</script>
+</body>
+</html>
