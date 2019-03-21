@@ -5,11 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FLAPPY BIRD</title>
 	<style>
+		
+		body {
+			margin: 0px;
+		}
 		#spill{
 			position: relative;
 			background-image: url("bakgrunn.jpg") ;
-			width: 288px;
-			height: 384px;
+			width: 300px;
+			height: 400px;
 		}
 		
 		#bird{
@@ -19,38 +23,78 @@
 			height: 24px;
 			left: 30px;
 		}
+		
+		.pipe{
+			position: absolute;
+		}
+		
+		#pipeOppe {
+			transform: rotate(180deg);
+		}
 	</style>
 </head>
 <body>
 
-	<canvas id="spill" width="600px" height="400px"></canvas>
-
+	<div id="spill" width="600px" height="400px"></div>
+	<img id="bird" src="bird.png" alt="">
+	<img class="pipe" id="pipeOppe" src="pipe.png" alt="">
+	<img class="pipe" id="pipeNede" src="pipe.png" alt="">
+	<p><span id="timer">00:00</span></p>
+	
 	<script>
 		
 		//Referanser til HTML
-        const spillCanvas = document.querySelector("#spill");
-        const bird = document.querySelector("#bird");
-        const fallBakke = 360;
-        var birdY = 100;
-		var birdFlyr = true;
-        var gravity = 0.1;
-        var fallFart = 1;
-        var bgpos = 0;
-        var bgfart = -1;
+        var spillCanvas = document.querySelector("#spill");
+        var bird = document.querySelector("#bird");
+        var pipeOppe = document.querySelector("#pipeOppe");
+        var pipeNede = document.querySelector("#pipeNede");
         
-        //const ctx = spillCanvas.getContext("2d");
+        let startDato = new Date();
+        let startSekund = startDato.getSeconds();
+		var timer = document.querySelector("#timer");
+  
+		//Variabler
+        var fallBakke = 373; //høyden fuglen kan falle
+        var birdY = 100; //fuglens y-posisjon
+		var birdFlyr = true; //settes til false når fuglen krasjer
+        var gravity = 0.1; //fuglen faller fortere og fortere pga gravitasjon
+        var fallFart = 1;  //utgangspunkt farten som fuglen faller i
+        var bgpos = 0; //bakgrunnsposisjonen
+        var bgfart = -1; //bakgrunnen flytter seg til venstre.
+        
+        var gap = 40; //mellomrommet mellom søylen oppe og nede
+        var maxgap = 80; // maks mellomrommet mellom søylene oppe og nede
+        
+        var pipeX= 100;     // plassering horisontalt
+        var pipeNedY = 0;    //plassering vertikalt, "festet" i toppen
+        var pipeBredde = 30;  //bildet sin bredde
+        var pipeHoyde = 200 - gap;    // bildet sin høyde
+        
+		
+		// Verdier til CSS intstillingene
+        pipeOppe.style.left = pipeX + "px";
+        pipeOppe.style.top = pipeNedY + "px";
+        
+        pipeOppe.style.height = pipeHoyde + "px";
+        pipeOppe.style.width = pipeBredde + "px";
+        
 		
 		
-		/*
-		var stolper = {
-		    farge: "grønn",
-		}
-		*/
+		pipeNede.style.left = pipeX + "px";
+		pipeNede.style.top = 200 + gap + "px"; //høyden på canvas - høyden på søylen + gap, fordi høyden på søylen er satt som 200-gap.
+
+		pipeNede.style.height = pipeHoyde + "px";
+		pipeNede.style.width = pipeBredde + "px";
+  
+        
+        
+		
 		
 		function fly() {
             fallFart += gravity;
             birdY += fallFart;
             bird.style.top = birdY + "px";
+            console.log(birdY,fallBakke);
             if (birdY > fallBakke) {
                 birdFlyr = false;
             }
@@ -62,11 +106,38 @@
 	       
         }
         
-        function gameLoop() {
+        function flyttStolper() {
+	       pipeX -= 1;
+	       if (pipeX < 0) {
+	           pipeX = 300;
+	           gap = Math.random()*maxgap + 20;
+               pipeHoyde = 200 - gap; //dersom man ikke tar - gap, så vil søylene treffe hverandre og fuglen kan ikke komme gjennom.
+               pipeOppe.style.height = pipeHoyde + "px";
+               pipeNede.style.top = 200 + gap + "px";
+               pipeNede.style.height = pipeHoyde + "px";
+	       }
+	       pipeOppe.style.left = pipeX + "px";
+	       pipeNede.style.left = pipeX + "px";
+		}
+		
+		//function die() {
+			//if(birdY < pipeNedY){ //hvis fuglen sin posisjon er mindre enn y = 0, altså over aksen.
+			//alert("Gave Over")
+			//else if(birdY > fallBakke ) //hvis fuglen treffer bakken.
+			    
+       // }
+			
+        
+        function gameLoop() { //en loop av alle funksjonene
+		    let frameDate = new Date;
+		    let frameSekund = frameDate.getSeconds();
+		    let tid = frameSekund-startSekund;
+		    console.log(tid);
 	        flyttBakgrunn();
+	        flyttStolper();
 	        fly();
-	        if(birdFlyr){
-	            requestAnimationFrame(gameLoop);
+	        if(birdFlyr){ //Sjekker om fuglen fortsatt skal fly
+	            requestAnimationFrame(gameLoop); //starter på nytt.
 	        }
         }
 
@@ -75,28 +146,13 @@
         gameLoop();
 		
 		function flaks() {
-		    fallBakke = -4;
+		    fallFart = -4;
 			
         }
         
         spill.onclick = flaks;
 		    
-		    
-		    
-		    
-		    
-		/*
-		//Funksjonsdefinisjoner
-		function gameLoop(){
-		    tegnBakgrunn();
-		    tegnStolper();
-		    tegnFugl();
-		    sjekkKollisjon();
-		    if(levende){
-		        requestAnimationFrame();
-		    }
-		}
-		*/
+		
 	</script>
 </body>
 </html>

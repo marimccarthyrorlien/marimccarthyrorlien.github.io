@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+</head>
+<body>
+
+	<canvas id="minCanvas" width="400" height="100"></canvas>
+	
+	<script>
+		var minCanvas = document.getElementById("minCanvas");
+		var ctx = minCanvas.getContext("2d");
+		
+		var firkant= {
+		    "bredde": 40,
+			"hoyde": 20,
+			"farge": "peachpuff",
+			"xpos": 180,
+			"ypos": 40,
+			"xfart": 3,
+			"xretning": 1
+		};
+		
+		var tegnFirkant(){
+		    ctx.fillStyle = "blue";
+		    ctx.fillRect(0,0,400,100);
+		    ctx.fillStyle = firkant.farge;
+		    
+		}
+	</script>
+</body>
+</html>
