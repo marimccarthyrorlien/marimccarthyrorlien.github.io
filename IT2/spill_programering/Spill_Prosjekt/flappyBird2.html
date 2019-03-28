@@ -5,20 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FLAPPY BIRD</title>
 	<style>
-		
 		body {
-			margin: 0px;
+			text-align: center;
 		}
+		
 		#spill{
 			position: relative;
 			background-image: url("bakgrunn.jpg") ;
 			width: 300px;
 			height: 400px;
+			display: block;
+			margin: auto;
 		}
 		
 		#bird{
 			position: absolute;
-			background-image: url("bird.jpg");
 			width: 34px;
 			height: 24px;
 			left: 30px;
@@ -29,55 +30,77 @@
 		}
 		
 		#pipeOppe {
-			transform: rotate(180deg);
+			transform: rotate(180deg); /* snur pipene oppned*/
 		}
+		
+		#play{
+			margin-top: 10px;
+			width: 300px;
+			height: 25px;
+			
+		}
+		#gameOver{
+			transform: translate(5px, 180px);
+			color: red;
+		}
+		
+		
 	</style>
 </head>
 <body>
-
-	<div id="spill" width="600px" height="400px"></div>
-	<img id="bird" src="bird.png" alt="">
-	<img class="pipe" id="pipeOppe" src="pipe.png" alt="">
-	<img class="pipe" id="pipeNede" src="pipe.png" alt="">
-	<p><span id="timer">00:00</span></p>
+	<h1>FLAPPY BIRD</h1>
+	<div id="spill" width="600px" height="400px">
+		<img id="bird" src="bird1.png" alt="">
+		<img class="pipe" id="pipeOppe" src="pipe.png" alt="">
+		<img class="pipe" id="pipeNede" src="pipe.png" alt="">
+		<h2 id="gameOver"></h2>
+	</div>
+	
+	
+	<button id="play">PLAY</button>
+	<p><span id="tid">Tid: 0 sek</span></p>
+	<p id="rekord"> Rekord:  </p>
 	
 	<script>
 		
-		//Referanser til HTML
-        var spillCanvas = document.querySelector("#spill");
+		//Referanser til HTML - definerer variabler
+        var spill = document.querySelector("#spill");
         var bird = document.querySelector("#bird");
         var pipeOppe = document.querySelector("#pipeOppe");
         var pipeNede = document.querySelector("#pipeNede");
-        
-        let startDato = new Date();
-        let startSekund = startDato.getSeconds();
-		var timer = document.querySelector("#timer");
+        var gameOver = document.querySelector("#gameOver");
+        var play = document.querySelector("#play");
+        var tid = document.querySelector("#tid");
+        var rekord = document.querySelector("#rekord");
+		
   
-		//Variabler
+		//Globale variabler - variabler med verdier som kan endres
         var fallBakke = 373; //høyden fuglen kan falle
         var birdY = 100; //fuglens y-posisjon
 		var birdFlyr = true; //settes til false når fuglen krasjer
-        var gravity = 0.1; //fuglen faller fortere og fortere pga gravitasjon
+        var gravity = 0.2; //fuglen faller fortere og fortere pga gravitasjon
         var fallFart = 1;  //utgangspunkt farten som fuglen faller i
         var bgpos = 0; //bakgrunnsposisjonen
         var bgfart = -1; //bakgrunnen flytter seg til venstre.
         
-        var gap = 40; //mellomrommet mellom søylen oppe og nede
+        var gap = 50; //mellomrommet mellom søylen oppe og nede
         var maxgap = 80; // maks mellomrommet mellom søylene oppe og nede
         
         var pipeX= 100;     // plassering horisontalt
         var pipeNedY = 0;    //plassering vertikalt, "festet" i toppen
         var pipeBredde = 30;  //bildet sin bredde
         var pipeHoyde = 200 - gap;    // bildet sin høyde
-        
 		
-		// Verdier til CSS intstillingene
+		var startDato; //Henter opp dato fra 1970
+		var startTid;  //Henter opp tid fra 1970.
+  
+		
+		// Verdier til CSS intstillingene - sette søylene
         pipeOppe.style.left = pipeX + "px";
         pipeOppe.style.top = pipeNedY + "px";
         
         pipeOppe.style.height = pipeHoyde + "px";
         pipeOppe.style.width = pipeBredde + "px";
-        
 		
 		
 		pipeNede.style.left = pipeX + "px";
@@ -86,32 +109,30 @@
 		pipeNede.style.height = pipeHoyde + "px";
 		pipeNede.style.width = pipeBredde + "px";
   
-        
-        
 		
 		
-		function fly() {
+		
+		function fly() { // funksjon som beveger fuglen
             fallFart += gravity;
             birdY += fallFart;
             bird.style.top = birdY + "px";
-            console.log(birdY,fallBakke);
-            if (birdY > fallBakke) {
-                birdFlyr = false;
+            if (birdY > fallBakke) { //dersom fuglen treffer bakken...
+                birdFlyr = false; //...flyr den ikke.
+
             }
         }
-        
-        function flyttBakgrunn() {
+        function flyttBakgrunn() { //en funkjson som flytter bakgrunnen mot venstre.
 		    bgpos += bgfart;
 		    spill.style.backgroundPosition = bgpos + "px 0px"
 	       
         }
         
-        function flyttStolper() {
+        function flyttStolper() { //en funksjon som flytter stolpene mot venstre, slik som bakgrunnen.
 	       pipeX -= 1;
 	       if (pipeX < 0) {
 	           pipeX = 300;
-	           gap = Math.random()*maxgap + 20;
-               pipeHoyde = 200 - gap; //dersom man ikke tar - gap, så vil søylene treffe hverandre og fuglen kan ikke komme gjennom.
+	           gap = Math.max(Math.random()*maxgap + 20, 50); // gapet mellom stolpene skal variere i størrelse
+               pipeHoyde = 200 - gap; //dersom man ikke trekker fra gap, så vil søylene treffe hverandre og fuglen kan ikke komme gjennom.
                pipeOppe.style.height = pipeHoyde + "px";
                pipeNede.style.top = 200 + gap + "px";
                pipeNede.style.height = pipeHoyde + "px";
@@ -120,37 +141,72 @@
 	       pipeNede.style.left = pipeX + "px";
 		}
 		
-		//function die() {
-			//if(birdY < pipeNedY){ //hvis fuglen sin posisjon er mindre enn y = 0, altså over aksen.
-			//alert("Gave Over")
-			//else if(birdY > fallBakke ) //hvis fuglen treffer bakken.
-			    
-       // }
-			
+		function sjekkKollisjon(birdY,pipeX, gap){ //funskjon som sjekker om fuglen krasjer i stolpene
+            if(pipeX < pipeBredde + 30 && pipeX + pipeBredde > 30){
+		        if(birdY < pipeHoyde || birdY > 200 + gap) {
+		            birdFlyr = false;
+                }
+		    }
+		}
+		
+		function oppdaterTid() { // funksjon for å telle sekunder
+			let nyDato = new Date;
+			let nyTid = nyDato.getTime();
+			let tidPassert = (nyTid - startTid)/1000; //tar tiden fra 1970 - tiden fra vi startet spillet og får differansen, altså tiden spillet har vært i gang. Deler på 1000 for å få sekunder og inne millisekunder
+			tid.innerHTML = "Tid: " + tidPassert.toFixed(0) + " Sek"; //skriver ut tiden og avrunder til 0 desimaler
+        }
         
-        function gameLoop() { //en loop av alle funksjonene
-		    let frameDate = new Date;
-		    let frameSekund = frameDate.getSeconds();
-		    let tid = frameSekund-startSekund;
-		    console.log(tid);
-	        flyttBakgrunn();
-	        flyttStolper();
-	        fly();
-	        if(birdFlyr){ //Sjekker om fuglen fortsatt skal fly
-	            requestAnimationFrame(gameLoop); //starter på nytt.
+        function lagreRekord(){ //funkjson for rekord
+            let nyDato = new Date;
+            let nyTid = nyDato.getTime();
+            let tidPassert = (nyTid - startTid)/1000;
+            if(localStorage.rekord === undefined){ //sjekker om det er satt en rekord fra før...
+                localStorage.rekord = 0; //..hvis ikke setter vi den til 0.
+            }
+            rekord.innerHTML = "Rekord: " + localStorage.rekord + " sek";
+	        
+	        if (tidPassert > localStorage.rekord){ //sjekker om tiden er større enn den lagrede rekorden
+	            localStorage.rekord = tidPassert; //.. hvis ja, setter vi tiden som ny lagret rekord
+	            rekord.innerHTML = "Ny rekord: " + tidPassert.toFixed(0) + " sek" //skriver ut ny funksjon
 	        }
         }
 
+        rekord.innerHTML = "Rekord: " + localStorage.rekord + " sek";// setter utenfor funksjonen for at den skal bli lagret når spillet begynner på nytt
+        
+		function gameLoop() { //en loop av alle funksjonene
+		    oppdaterTid();
+		    lagreRekord();
+	        flyttBakgrunn();
+	        flyttStolper();
+	        fly();
+	        sjekkKollisjon(birdY,pipeX, gap);
+	        if(birdFlyr){ //Sjekker om fuglen fortsatt skal fly
+	            requestAnimationFrame(gameLoop); //starter loopen på nytt dersom den flyr.
+	        }
+	        else { //dersom den ikke flyr....
+	            gameOver.innerHTML = "GAME OVER!";
+	            play.innerText = "RESET";
+                play.onclick = () => location.reload();  // starter spillet på nytt
+               
+            }
+        }
+        
+		
 
         //Set up
-        gameLoop();
+       play.onclick = function (){
+           startDato = new Date;
+           startTid = startDato.getTime();
+	       gameLoop();
+       };
 		
+       // starter funksjon
 		function flaks() {
-		    fallFart = -4;
+		    fallFart = -4; //setter negativ fart, fuglen flyr opp når den klikkes på.
 			
         }
         
-        spill.onclick = flaks;
+        spill.onclick = flaks; // Klikk innenfor div element og fuglen vil "flakse".
 		    
 		
 	</script>

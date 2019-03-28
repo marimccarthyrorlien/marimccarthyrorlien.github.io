@@ -19,10 +19,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/flappyBird2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+            <state relative-caret-position="174">
+              <caret line="158" column="53" selection-start-line="158" selection-start-column="53" selection-end-line="158" selection-end-column="53" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/bird1.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -45,6 +50,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>nav</find>
+      <find>start</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,9 +114,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="527" />
+    <option name="x" value="207" />
     <option name="y" value="23" />
-    <option name="width" value="874" />
+    <option name="width" value="1210" />
     <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -121,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,20 +144,12 @@
               <item name="marimccarthyrorlien.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="marimccarthyrorlien.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="IT2" type="462c0819:PsiDirectoryNode" />
-              <item name="Animasjoner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="marimccarthyrorlien.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="marimccarthyrorlien.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="IT2" type="462c0819:PsiDirectoryNode" />
-              <item name="Animasjoner" type="462c0819:PsiDirectoryNode" />
-              <item name="Prove" type="462c0819:PsiDirectoryNode" />
+              <item name="spill_programering" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,6 +229,8 @@
       <workItem from="1551436179857" duration="54000" />
       <workItem from="1552549259777" duration="11156000" />
       <workItem from="1553153610643" duration="15365000" />
+      <workItem from="1553499817150" duration="41000" />
+      <workItem from="1553708450696" duration="15862000" />
     </task>
     <task id="LOCAL-00001" summary="ny mappe">
       <created>1535024207537</created>
@@ -263,14 +264,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265307000" />
+    <option name="totallyTimeSpent" value="281210000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="527" y="23" width="874" height="797" extended-state="0" />
+    <frame x="207" y="23" width="1210" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27549824" />
-      <window_info id="Structure" order="1" weight="0.30464217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17914213" />
+      <window_info id="Structure" order="1" weight="0.30437955" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
@@ -289,8 +290,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27568135" />
-      <window_info id="Structure" order="1" weight="0.30514705" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.03432701" />
+      <window_info id="Structure" order="1" weight="0.30437955" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
@@ -300,9 +301,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329602" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32844576" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32844576" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32991204" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -316,20 +318,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="ny mappe" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IT2/HjelpApp/hjelpApp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT1/DatabaseProsjekt/BestillTIme.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Animasjoner/ProvSelv_s.253/oppg1.html" />
     <entry file="file://$PROJECT_DIR$/IT2/Animasjoner/firkant.html" />
     <entry file="file://$PROJECT_DIR$/IT2/Animasjoner/Bill Clinton.xhtml" />
@@ -533,9 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/bird.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/spill_programering/cookie_PNG.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -608,9 +593,6 @@
     <entry file="file://$PROJECT_DIR$/IT2/Prosjekt_host/test.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Prosjekt_host/spm1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Animasjoner/Prove/oppgave2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -618,10 +600,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Prosjekt_host/spm1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/bird.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/bird1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/bird.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/spill_programering/Spill_Prosjekt/flappyBird2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+        <state relative-caret-position="174">
+          <caret line="158" column="53" selection-start-line="158" selection-start-column="53" selection-end-line="158" selection-end-column="53" />
         </state>
       </provider>
     </entry>
